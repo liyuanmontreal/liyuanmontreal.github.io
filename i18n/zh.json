@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Yuan Li · AI Research & Projects"
+  },
+  "nav": {
+    "home": "首页",
+    "projects": "项目",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "hero": {
+    "greeting": "你好，我是李媛",
+    "title": "学生，机器学习开发者",
+    "subtitle": "探索多模态 AI、情感识别与金融智能。"
+  },  
+  "interests": {
+    "title": "研究兴趣",
+    "text": "探索多模态人工智能的前沿应用，包括语音与文本的融合情感识别、用于决策的强化学习，以及金融数据的智能分析。研究关注点在于连接人类情感、语言与经济行为的理解。"
+  },
+  "projects": {
+    "title": "项目集",
+    "view_code": "GitHub"
+  },
+  "about": {
+    "title": "关于我",
+    "text": "蒙特利尔大学 / Mila 机器学习硕士生，具备计算机科学、全栈开发和项目管理背景。研究方向：自然语言处理、多模态情感识别、强化学习、金融 AI。"
+  },
+  "contact": {
+    "title": "联系",
+    "email": "邮箱",
+    "social": "社交"
+  },
+  "footer": {
+    "cta": "更多项目请访问 GitHub",
+    "rights": "版权所有。"
+  }
+}

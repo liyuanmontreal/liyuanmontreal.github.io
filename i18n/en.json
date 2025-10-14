@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Yuan Li · AI Research & Projects"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Yuan Li",
+    "title": "Student, Machine Learning Developer",
+    "subtitle": "Exploring multimodal AI, emotion recognition, and financial intelligence."
+  },
+  "interests": {
+    "title": "Research Interests",
+    "text": "Exploring frontier applications of multimodal AI: emotion recognition from speech and text, reinforcement learning for decision-making, and intelligent financial data analysis. My work focuses on bridging human emotion, language, and economic behavior understanding."
+  }, 
+  "projects": {
+    "title": "Projects",
+    "view_code": "GitHub"
+  },
+  "about": {
+    "title": "About",
+    "text": "I am a Master’s student in Machine Learning at Université de Montréal / Mila, with a background in computer science ,full‑stack development and project management. Research interests: natural language processing,multimodal emotion recognition, reinforcement learning, and financial AI. "
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "social": "Social"
+  },
+  "footer": {
+    "cta": "View more on GitHub",
+    "rights": "All rights reserved."
+  }
+}
