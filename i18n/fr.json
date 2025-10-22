@@ -13,21 +13,26 @@
     "title": "Étudiante,Développeuse en apprentissage automatique",
     "subtitle": "Exploration de l'IA multimodale, de la reconnaissance des émotions et de l'intelligence financière."
   },
-  "section": {
-    "projects": "Projets phares"
+  "sections": {
+    "projects": " Projects",
+    "applied": "ApplicatProjets phares", 
+    "research": "Researchion Projects",
+    "articles": "Articles",
+    "read_more": "Lire la suite"
   },
   
   "interests": {
     "title": "Domaines de recherche",
-    "text": "Exploration des applications de pointe de l’IA multimodale : reconnaissance des émotions à partir de la parole et du texte, apprentissage par renforcement pour la décision, et analyse intelligente des données financières. Mes travaux relient émotions humaines, langage et comportements économiques."
+    "text": "Mes principaux domaines de recherche actuels sont les problèmes d'apprentissage automatique inspirés par d'autres disciplines, la résolution de problèmes complexes du monde réel avec l'IA et les projets créatifs en IA."
   },
   "projects": {
     "title": "Projets",
     "view_code": "GitHub"
   },
+ 
   "about": {
     "title": "À propos",
-    "text": "Étudiante à la maîtrise en apprentissage automatique à l'Université de Montréal / Mila, avec une formation en informatique, en développement full‑stack et en gestion de projet. Intérêts : traitement du langage naturel, reconnaissance des émotions multimodale, apprentissage par renforcement et IA financière."
+    "text": "Étudiante à la maîtrise en apprentissage automatique à l'Université de Montréal / Mila, avec une formation en informatique, en développement full‑stack et en gestion de projet. "
   },
   "contact": {
     "title": "Contact",

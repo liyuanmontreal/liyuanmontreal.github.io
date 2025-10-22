@@ -1,0 +1,62 @@
+[
+  {
+    "name": "LLM‑Small",
+    "image": "assets/llm_small.png",
+    "tech": [
+        "Python", "PyTorch", "Transformers", "SentencePiece","Tokenizer retraining"
+    ],
+     "github": "https://github.com/liyuanmontreal/llm_small",
+    "description": {
+      "en": "LLM-Small is a compact, lightweight ChatGPT style language model.",
+      "zh": "LLM-Small 是一个从零开始构建的小型语言模型。",
+      "fr": "LLM-Small est un modèle de langage léger."
+    }
+  },
+
+ 
+   {
+    "name": "MetaMirror",
+    "image": "assets/metamirror.png",
+    "tech": [
+        "Python", "PyTorch", "NumPy", "Matplotlib", "Scikit-learn"
+    ],
+     "github": "https://github.com/liyuanmontreal/metamirror",
+
+    "description": {
+      "en": "MetaMirror is a research project exploring whether a machine learning model can learn about itself — by training a meta-model to predict the base model’s next performance, enabling self-referential and introspective learning.",
+      "zh": "MetaMirror 是一个探索机器学习模型能否“理解自身”的研究项目——通过训练一个元模型来预测主模型下一步的表现，从而实现神经网络的自我建模与反思。",
+      "fr": "MetaMirror est un projet de recherche explorant si un modèle d’apprentissage automatique peut apprendre sur lui-même — en entraînant un méta-modèle à prédire la performance future du modèle de base, favorisant un apprentissage auto-référentiel et introspectif."
+    }
+  },
+
+ 
+    {
+    "name": "ParityGEquivCNN",
+    "image": "assets/ParityGEquivCNN.jpg",
+    "tech": [
+        "Python", "PyTorch", "NumPy", "Matplotlib"
+    ],
+     "github": "https://github.com/liyuanmontreal/ParityGEquivCNN",
+    "description": {
+      "en": "Parity-G Equivariant Convolutional Networks for Robust Feature Learning and Symmetric Structure Perception.",
+      "zh": "本项目受宇称对称启发，实现具备内在镜像等变性的卷积网络，实现结构对称感知与鲁棒特征学习",
+      "fr": "Réseaux de Convolution Équivariants Parité-G pour l’Apprentissage de Caractéristiques Robustes et la Perception de Structures Symétriques."
+    }
+  },
+
+  {
+  "name": "HybridQuantumClassicalNN",
+  "image": "assets/HybridQuantumClassicalNN.jpg",
+  "tech": [
+    "Python", "PyTorch", "PennyLane", "NumPy", "Matplotlib"
+  ],
+  "github": "https://github.com/liyuanmontreal/HybridQuantumClassicalNN",
+  "description": {
+    "en": "A hybrid quantum–classical neural network that combines differentiable quantum circuits with deep learning encoders for small-sample image classification and quantum feature exploration.",
+    "zh": "一种混合量子–经典神经网络，将可微量子电路与深度学习编码器结合，用于小样本图像分类与量子特征探索。",
+    "fr": "Un réseau neuronal hybride quantique-classique combinant des circuits quantiques différentiables avec des encodeurs d’apprentissage profond pour la classification d’images à faible échantillon et l’exploration de caractéristiques quantiques."
+  }
+}
+
+  
+]
