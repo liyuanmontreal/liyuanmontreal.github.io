@@ -51,7 +51,20 @@
       "zh": "生物多样性数据可视化仪表盘",
       "fr": "Tableau de bord de visualisation des données sur la biodiversité"
     }
+  },
+  {
+  "name": "Pottery Matching",
+  "image": "assets/pottery_match.png",
+  "tech": [
+    "Python", "PyTorch", "FAISS", "OpenCV", "NetworkX"
+  ],
+  "github": "https://github.com/liyuanmontreal/h690_pottery_matching",
+  "description": {
+    "en": "Self-supervised pottery fragment reconstruction using FAISS retrieval, Siamese networks, geometric consistency, and reference shape priors.",
+    "zh": "基于 FAISS 检索、孪生网络、几何一致性与参考陶器形状的自监督陶片重建项目。",
+    "fr": "Reconstruction auto-supervisée de fragments de poterie utilisant FAISS, réseaux siamois, cohérence géométrique et formes de référence."
   }
+}
 ]
 
       
