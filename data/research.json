@@ -1,7 +1,37 @@
 [
   {
+    "name": "Multimodal Emotion Recognition and Prediction",
+    "slug": "emotion",
+    "image": "assets/emotion.jpg",
+    "tech": [
+      "PyTorch","WavLM","RoBERTa","CNN","Transformer"
+    ],
+    "github": "https://github.com/liyuanmontreal/IFT-6759-Advanced-ML-Projectroject",
+    "description": {
+      "en": "Multimodal Dialogue Emotion Recognition and Prediction Model Based on Text and Speech Fusion.",
+      "zh": "基于文本与语音融合的多模态对话情感识别和预测模型。",
+      "fr": "Modèle de reconnaissance et de prédiction des émotions dans les dialogues multimodaux basé sur la fusion du texte et de la parole."
+    }
+  },
+  {
+    "name": "Stock Price Prediction",
+    "slug": "stock",
+    "image": "assets/stock.jpg",
+    "tech": [
+      "PyTorch","DoRA fine-tuning","FinBERT","Sentiment Analysis","Data Augmentation", "Agent"
+      
+    ],
+    "github": "https://github.com/liyuanmontreal/IFT6289-NLP_with_DL",
+    "description": {
+      "en": "Short-Term Stock Price Prediction Model Integrating Financial News, Social Media, Macroeconomic Indicators, and Historical Market Data.",
+      "zh": "融合金融新闻、社交媒体、宏观经济数据和历史股票数据的短期股票价格预测模型。",
+      "fr": "Modèle de prédiction à court terme des prix des actions intégrant les nouvelles financières, les médias sociaux, les indicateurs macroéconomiques et les données boursières historiques."
+    }
+  },
+  {
     "name": "LLM‑Small",
     "image": "assets/llm_small.png",
+    "slug"  : "llm-small",
     "tech": [
         "Python", "PyTorch", "Transformers", "SentencePiece","Tokenizer retraining"
     ],
@@ -16,7 +46,8 @@
  
    {
     "name": "MetaMirror",
-    "image": "assets/metamirror.png",
+    "slug" : "metamirror",
+    "image": "assets/metamirror.jpg",
     "tech": [
         "Python", "PyTorch", "NumPy", "Matplotlib", "Scikit-learn"
     ],
@@ -32,6 +63,7 @@
  
     {
     "name": "ParityGEquivCNN",
+    "slug" : "pnn",
     "image": "assets/ParityGEquivCNN.jpg",
     "tech": [
         "Python", "PyTorch", "NumPy", "Matplotlib"
@@ -46,6 +78,7 @@
 
   {
   "name": "HybridQuantumClassicalNN",
+  "slug": "qnn",
   "image": "assets/HybridQuantumClassicalNN.jpg",
   "tech": [
     "Python", "PyTorch", "PennyLane", "NumPy", "Matplotlib"
@@ -56,7 +89,23 @@
     "zh": "一种混合量子–经典神经网络，将可微量子电路与深度学习编码器结合，用于小样本图像分类与量子特征探索。",
     "fr": "Un réseau neuronal hybride quantique-classique combinant des circuits quantiques différentiables avec des encodeurs d’apprentissage profond pour la classification d’images à faible échantillon et l’exploration de caractéristiques quantiques."
   }
+},
+
+  {
+  "name": "Lyra",
+  "slug": "lyra",
+  "image": "assets/lyra.png",
+  "tech": [
+    "Nature Language"
+  ],
+  "github": "https://github.com/liyuanmontreal/Lyra",
+  "description": {
+    "en": "Lyra is a high-density semantic nature language that use P–A–E three-dimensional semantic structure to represent untranslatable words around the world. ",
+    "zh": "Lyra是一种高密度语义自然语言，采用P–A–E三维语义结构来表示世界各地的不可翻译词汇。",
+    "fr": "Lyra est une langue naturelle sémantique à haute densité qui utilise une structure sémantique tridimensionnelle P–A–E pour représenter les mots intraduisibles à travers le monde."
+  }
 }
+
 
   
 ]

@@ -1,0 +1,4 @@
+LLM-Small is a compact language model built entirely from scratch, covering the full pipeline from custom tokenizer training (SentencePiece) and data pipeline construction (Hugging Face Datasets) to model training (GPT-2 architecture) and text generation with visualization.
+The model is based on the principle of Causal Language Modeling (CLM), learning language distributions by minimizing the cross-entropy loss for predicting the next token.
+It implements a complete training workflow, including data cleaning, automatic tokenizer repair, dynamic batching with padding/truncation, mixed-precision training, and visualization of loss and perplexity curves.
+The core framework is built on PyTorch and Hugging Face Transformers, with SentencePiece for token modeling, Datasets for efficient data streaming, and Matplotlib for monitoring and visualization of the training process.

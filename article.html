@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Article · Yuan Li</title>
+
+  <!-- Tailwind (dark via class) -->
+  <script>tailwind = { config: { darkMode: 'class' } }</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Vue & i18n -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/vue-i18n@9/dist/vue-i18n.global.prod.js"></script>
+
+  <!-- Markdown / Mermaid / Vega-Lite / MathJax -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    // 强制软换行 + GFM
+    if (window.marked && marked.setOptions) {
+      marked.setOptions({ gfm: true, breaks: true });
+    }
+    // 将“单换行”转为“Markdown软换行”（行尾两个空格+换行）
+    function normalizeMdForSoftBreaks(md) {
+      let s = (md || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+      s = s.replace(/([^\n])\n(?!\n)/g, '$1  \n');
+      return s;
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: false, theme: "dark" });</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <script>
+    window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, svg: { fontCache: 'global' } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <style>
+    .prose { max-width: 72ch; }
+    .prose img { border-radius: 0.75rem; border: 1px solid rgb(51 65 85); }
+    .prose a { color: #7dd3fc; }
+    /* 段落/列表项都把 \n 视作换行 */
+    .prose p, .prose li { white-space: pre-wrap; }
+    pre, code { background: transparent !important; }
+  </style>
+</head>
+
+<body class="bg-slate-900 text-slate-100">
+  <div id="app" class="max-w-4xl mx-auto px-6 py-8">
+    <div class="flex items-center justify-between">
+      <a href="index.html#articles" class="text-sky-300 hover:underline">&larr; {{ t('sections.back') || 'Back' }}</a>
+      <div class="flex gap-2">
+        <button v-for="l in ['en','zh','fr']"
+                :key="l" @click="switchLang(l)"
+                class="px-2 py-1 text-xs rounded border border-slate-700 hover:bg-slate-800"
+                :class="locale===l ? 'bg-slate-800 text-sky-300' : 'text-slate-300'">
+          {{ l.toUpperCase() }}
+        </button>
+      </div>
+    </div>
+
+    <header class="mt-4">
+      <h1 class="text-2xl md:text-3xl font-bold text-sky-200" v-if="art">{{ art.title?.[locale] || art.title?.en }}</h1>
+      <div class="mt-1 text-slate-400 text-sm" v-if="art && art.date">{{ art.date }}</div>
+      <div class="mt-3 flex flex-wrap gap-2" v-if="art && art.tags?.length">
+        <span v-for="tag in art.tags" :key="tag"
+              class="text-xs px-2 py-1 rounded-full bg-slate-800/70 border border-slate-700">{{ tag }}</span>
+      </div>
+    </header>
+
+    <article id="content" class="prose prose-invert mt-6"></article>
+
+    <div class="mt-8 flex gap-3">
+      <a v-if="art && art.link && !hasInternalContent"
+         :href="art.link" target="_blank"
+         class="px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-sm">
+        {{ t('sections.open_external') || 'Open external link' }}
+      </a>
+      <a href="index.html#articles" class="px-3 py-1.5 rounded-lg border border-slate-600 text-slate-200 text-sm">
+        {{ t('sections.back') || 'Back' }}
+      </a>
+    </div>
+  </div>
+
+<script>
+;(async () => {
+  const { createApp, ref } = Vue
+  const { createI18n } = VueI18n
+
+  const qs = new URL(location.href).searchParams
+  const slug = (qs.get('slug') || '').trim()
+  const initialLocale = (qs.get('lang') || localStorage.getItem('locale') || 'en').toLowerCase()
+
+  async function loadJSON(p){ return (await fetch(p + '?v=art-'+Date.now(), { cache:'no-store' })).json() }
+  async function loadTextNoCache(url) {
+    const u = `${url}?v=${Date.now()}`
+    const r = await fetch(u, { cache: 'no-store' })
+    if (!r.ok) throw new Error(`HTTP ${r.status} @ ${url}`)
+    return r.text()
+  }
+
+  async function tryRenderMarkdown(containerId, theSlug, lang) {
+    const candidates = [
+      `data/articles/${theSlug}.${lang}.md`,
+      `data/articles/${theSlug}.en.md`,
+      `data/articles/${theSlug}.md`,
+      `data/articles/${theSlug.replace(/_/g,'-')}.${lang}.md`,
+      `data/articles/${theSlug.replace(/_/g,'-')}.en.md`,
+      `data/articles/${theSlug.replace(/_/g,'-')}.md`,
+      `data/articles/${theSlug.replace(/-/g,'_')}.${lang}.md`,
+      `data/articles/${theSlug.replace(/-/g,'_')}.en.md`,
+      `data/articles/${theSlug.replace(/-/g,'_')}.md`
+    ]
+    let md = '', lastErr = null
+    console.group('[article.md] load')
+    for (const u of candidates) {
+      try { console.log('try:', u); md = await loadTextNoCache(u); console.log('OK:', u); break }
+      catch (e) { console.warn('miss:', u, e.message); lastErr = e }
+    }
+    console.groupEnd()
+
+    const container = document.getElementById(containerId)
+    if (!md) return { ok:false, error:lastErr }
+
+    // 软换行标准化 + 解析
+    const html = marked.parse(normalizeMdForSoftBreaks(md))
+    container.innerHTML = html
+
+    // Mermaid
+    try {
+      const nodes = container.querySelectorAll('pre > code.language-mermaid')
+      let idx = 0
+      for (const codeEl of nodes) {
+        const code = codeEl.textContent
+        const mount = document.createElement('div')
+        codeEl.parentElement.replaceWith(mount)
+        const id = 'm-' + (idx++)
+        const { svg } = await mermaid.render(id, code)
+        mount.innerHTML = svg
+      }
+    } catch (e) { console.warn('Mermaid render error:', e) }
+
+    // Vega-Lite
+    try {
+      const vegaBlocks = container.querySelectorAll('pre > code.language-vega-lite')
+      for (const codeEl of vegaBlocks) {
+        const mount = document.createElement('div')
+        const txt = codeEl.textContent
+        codeEl.parentElement.replaceWith(mount)
+        await vegaEmbed(mount, JSON.parse(txt), { actions:false, renderer:'svg' })
+      }
+    } catch (e) { console.warn('Vega-Lite render error:', e) }
+
+    try { window.MathJax?.typesetPromise && await MathJax.typesetPromise() } catch(e) {}
+    return { ok:true }
+  }
+
+  const messages = {
+    en: await loadJSON('i18n/en.json').catch(()=>({sections:{back:'Back', open_external:'Open external link'}})),
+    zh: await loadJSON('i18n/zh.json').catch(()=>({sections:{back:'返回', open_external:'打开外部链接'}})),
+    fr: await loadJSON('i18n/fr.json').catch(()=>({sections:{back:'Retour', open_external:'Ouvrir le lien externe'}})),
+  }
+  const i18n = createI18n({ legacy:false, locale: initialLocale, fallbackLocale:'en', messages })
+
+  const App = {
+    setup(){
+      const { t, locale } = VueI18n.useI18n()
+      const art = ref(null)
+      const hasInternalContent = ref(false)
+
+      const findArticle = async () => {
+        const list = await loadJSON('data/articles.json').catch(()=>[])
+        art.value = list.find(a =>
+          (a.slug && a.slug === slug) ||
+          (!a.slug && a.title?.en && encodeURIComponent(a.title.en) === slug)
+        ) || null
+      }
+
+      const renderNow = async () => {
+        hasInternalContent.value = false
+        const lang = (locale.value || 'en').toLowerCase()
+
+        // 1) Markdown 优先
+        const mdRes = await tryRenderMarkdown('content', slug, lang)
+        if (mdRes && mdRes.ok) { hasInternalContent.value = true; return }
+
+        // 2) 其次 articles.json 的 content[lang]/content.en
+        const container = document.getElementById('content')
+        const html = art.value?.content?.[lang] || art.value?.content?.en
+        if (html) {
+          container.innerHTML = html
+          try { window.MathJax?.typesetPromise && await MathJax.typesetPromise() } catch(e) {}
+          hasInternalContent.value = true
+          return
+        }
+
+        // 3) 无站内内容：展示提示（保留外链按钮）
+        container.innerHTML = `
+          <div class="p-4 rounded-lg border border-slate-700 bg-slate-800/70">
+            <div class="text-sky-300 font-semibold mb-1">No internal content</div>
+            <div class="text-xs text-slate-400">This article shows an external link instead.</div>
+          </div>`
+      }
+
+      ;(async () => { await findArticle(); await renderNow() })()
+
+      const switchLang = async (l) => {
+        locale.value = l
+        localStorage.setItem('locale', l)
+        await renderNow()
+      }
+
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'locale') renderNow()
+      })
+
+      return { t, locale, art, hasInternalContent, switchLang }
+    }
+  }
+
+  Vue.createApp(App).use(i18n).mount('#app')
+})()
+</script>
+</body>
+</html>
