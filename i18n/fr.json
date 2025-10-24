@@ -10,8 +10,8 @@
   },
   "hero": {
     "greeting": "Bonjour, je suis Yuan Li",
-    "title": "Étudiante,Développeuse en apprentissage automatique",
-    "subtitle": "Exploration de l'IA multimodale, de la reconnaissance des émotions et de l'intelligence financière."
+    "title": "Étudiante,Développeuse",
+    "subtitle": ""
   },
   "sections": {
     "projects": " Projects",
@@ -33,7 +33,7 @@
  
   "about": {
     "title": "À propos",
-    "text": "Étudiante à la maîtrise en apprentissage automatique à l'Université de Montréal / Mila, avec une formation en informatique, en développement full‑stack et en gestion de projet. "
+    "text": "Étudiante à la maîtrise en apprentissage automatique à l'Université de Montréal / Mila.Loisirs：Lecture, puzzles, crochet, rangement ponctuel; collectionneuse de recettes ; curieuse de nouvelles disciplines et cultures, sensible au beau et aux couleurs ; pas doué dans les sports qui demandent du courage.\n “Pour moi, le monde est une pièce remplie d'innombrables boîtes noires. Et je suis dans le coin de l'une d'elles. Je m'efforce d'en voir clairement chaque recoin. Ensuite, je veux sauter dans une autre boîte et en démêler le contenu. Enfin, je veux remettre de l'ordre dans toutes ces boîtes en désordre.”"
   },
   "contact": {
     "title": "Contact",

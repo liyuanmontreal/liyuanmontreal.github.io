@@ -10,7 +10,7 @@
   },
   "hero": {
     "greeting": "Hi, I'm Yuan Li",
-    "title": "Student, Machine Learning Developer",
+    "title": "Student",
     "subtitle": ""
   },
 
@@ -34,7 +34,7 @@
  
   "about": {
     "title": "About",
-    "text": "I am a Master’s student in Machine Learning at Université de Montréal / Mila, with a background in computer science ,full‑stack development and project management.  "
+    "text": "Master's student in Machine Learning at University of Montreal / Mila.Hobbies: Reading, puzzles, crochet, occasional decluttering,recipe collector; curious about new disciplines and cultures, drawn to beauty and color; not good at any courage-heavy sport. \n “To me, the world is a room filled with countless black boxes. And I'm in the corner of one of them. I strive to see every corner of this box clearly. Then I want to jump into another box and unravel what's inside. Finally, I want to put all these messed-up boxes in order.”"
   },
   "contact": {
     "title": "Contact",
