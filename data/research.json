@@ -100,9 +100,9 @@
   ],
   "github": "https://github.com/liyuanmontreal/Lyra",
   "description": {
-    "en": "Lyra is a high-density semantic nature language that use P–A–E three-dimensional semantic structure to represent untranslatable words around the world. ",
-    "zh": "Lyra是一种高密度语义自然语言，采用P–A–E三维语义结构来表示世界各地的不可翻译词汇。",
-    "fr": "Lyra est une langue naturelle sémantique à haute densité qui utilise une structure sémantique tridimensionnelle P–A–E pour représenter les mots intraduisibles à travers le monde."
+    "en": "Lyra is a high-density semantic language that use P–A–E three-dimensional semantic structure to represent untranslatable words around the world. ",
+    "zh": "Lyra是一种高密度语义语言，采用P–A–E三维语义结构来表示世界各地的不可翻译词汇。",
+    "fr": "Lyra est une langue sémantique à haute densité qui utilise une structure sémantique tridimensionnelle P–A–E pour représenter les mots intraduisibles à travers le monde."
   }
 }
 

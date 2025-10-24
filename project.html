@@ -38,10 +38,57 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
   <style>
-    .prose { max-width: 72ch; }
+    /* .prose { max-width: 72ch; }
     .prose img { border-radius: 0.75rem; border: 1px solid rgb(51 65 85); }
     .prose a { color: #7dd3fc; }
-    .prose p, .prose li { white-space: pre-wrap; }
+    .prose p, .prose li { white-space: pre-wrap; } */
+    /* —— 改善 Markdown 正文的阅读性 —— */
+    .prose { 
+      max-width: 72ch;
+      line-height: 1.9;               /* 整体行高（桌面端更松） */
+    }
+    .prose img { border-radius: 0.75rem; border: 1px solid rgb(51 65 85); }
+    .prose a { color: #7dd3fc; }
+
+    /* 段落 & 列表：更高的行距 + 保留原来的软换行效果 */
+    .prose p, .prose li { 
+      white-space: pre-wrap; 
+      line-height: 1.9;
+    }
+
+    /* 段落与段落 / 列表之间的“段间距” */
+    .prose p + p,
+    .prose p + ul, .prose p + ol,
+    .prose ul + p, .prose ol + p {
+      margin-top: 0.95rem;            /* 可按需调到 1.1rem */
+    }
+
+    /* 列表项之间稍微拉开一点 */
+    .prose li + li { margin-top: 0.4rem; }
+    .prose ul, .prose ol { padding-left: 1.25rem; }
+
+    /* 标题的上下间距更舒展 */
+    .prose h2 { margin-top: 2.2rem; margin-bottom: 0.9rem; }
+    .prose h3 { margin-top: 1.6rem; margin-bottom: 0.6rem; }
+
+    /* 代码块 / 引用 / 表格 / 图片与周围内容的间距 */
+    .prose pre,
+    .prose blockquote,
+    .prose table,
+    .prose img {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* 小屏稍微紧凑一点（可选） */
+    @media (max-width: 640px) {
+      .prose { line-height: 1.8; }
+      .prose p, .prose li { line-height: 1.8; }
+      .prose p + p,
+      .prose p + ul, .prose p + ol,
+      .prose ul + p, .prose ol + p { margin-top: 0.8rem; }
+    }
+    .prose p, .prose li { white-space: pre-wrap; } */
     pre, code { background: transparent !important; }
   </style>
 </head>

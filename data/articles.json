@@ -1,4 +1,17 @@
 [
+    {
+    "title": {
+      "en": "The Birth Chronicle of Lyra",
+      "zh": "Lyra诞生手记",
+      "fr": "Chronique de la naissance de Lyra"
+    },
+    "date": "2025-10-24",
+    "slug": "lyra-birth",
+    "link": "https://medium.com/@liyuan.montreal/lyra-birth",
+    "tags": [
+    "Nature Language"
+    ]
+  },
   {
     "title": {
       "en": "When Machines Start to Think -Seven Philosophical Themes and the Birth of Absurd Intelligence",

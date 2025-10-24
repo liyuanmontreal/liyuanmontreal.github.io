@@ -61,7 +61,10 @@
         }
       })
 
-      const switchLang = (l) => (locale.value = l)
+      const switchLang = (l) => {
+        locale.value = l
+        localStorage.setItem('locale', l)   // project.html 调用
+      }
 
       const links = {
         email: "liyuan.montreal_at_gmail.com",
@@ -80,8 +83,7 @@
           <div class="text-xl md:text-2xl font-bold tracking-wide text-sky-700 dark:text-sky-300">Yuan Li · AI</div>
           <div class="flex items-center gap-4 md:gap-6 text-sm">
             <a href="#" class="hover:text-sky-700 dark:hover:text-sky-300">{{ t('nav.home') }}</a>
-            <a href="#research" class="hover:text-sky-700 dark:hover:text-sky-300">{{ t('sections.research') }}</a>
-            <a href="#applied" class="hover:text-sky-700 dark:hover:text-sky-300">{{ t('sections.applied') }}</a>
+            <a href="#projects" class="hover:text-sky-700 dark:hover:text-sky-300">{{ t('sections.projects') }}</a>           
             <a href="#articles" class="hover:text-sky-700 dark:hover:text-sky-300">{{ t('sections.articles') }}</a>
 
      
@@ -112,8 +114,12 @@
           <p class="text-slate-700 dark:text-slate-300 leading-relaxed">{{ t('interests.text') }}</p>
         </section>
 
-        <section id="research" class="max-w-6xl mx-auto px-6 mt-12">
-          <h3 class="text-xl md:text-2xl font-semibold text-sky-700 dark:text-sky-300 mb-6">{{ t('sections.research') }}</h3>
+        <!-- PROJECTS 容器：内部再分 Research / Application 两个子块 -->
+        <section id="projects" class="max-w-6xl mx-auto px-6 mt-12">
+          <h3 class="text-xl md:text-2xl font-semibold text-sky-700 dark:text-sky-300 mb-6">{{ t('sections.projects') }}</h3>
+
+          <!-- 子小节 Research -->
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.research') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in research" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
@@ -125,19 +131,23 @@
                   <span v-for="tag in p.tech" :key="tag"
                     class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
                 </div>
-                <div class="mt-4" v-if="p.github">
-                  <a :href="p.github" target="_blank" rel="noopener"
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
                     class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
                     {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details（跳转到项目详情页） -->
+                  <a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                      class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                      {{ t('sections.read_more') }}
                   </a>
                 </div>
               </div>
             </div>
           </div>
-        </section>
 
-        <section id="applied" class="max-w-6xl mx-auto px-6 mt-12">
-          <h3 class="text-xl md:text-2xl font-semibold text-sky-700 dark:text-sky-300 mb-6">{{ t('sections.applied') }}</h3>
+          <!-- 子小节 Application -->
+          <div id="projects-application" class="mt-10 mb-3 text-sky-400/90 font-medium">{{ t('sections.applied') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in applied" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
@@ -149,10 +159,15 @@
                   <span v-for="tag in p.tech" :key="tag"
                     class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
                 </div>
-                <div class="mt-4" v-if="p.github">
-                  <a :href="p.github" target="_blank" rel="noopener"
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
                     class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
                     {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details -->
+                  <a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('sections.read_more') }}
                   </a>
                 </div>
               </div>
@@ -160,11 +175,12 @@
           </div>
         </section>
 
+        <!-- Articles（改为 read more 跳 article.html） -->
         <section id="articles" class="max-w-6xl mx-auto px-6 mt-12">
           <h3 class="text-xl md:text-2xl font-semibold text-sky-700 dark:text-sky-300 mb-6">{{ t('sections.articles') }}</h3>
           <div class="grid gap-6 md:grid-cols-2">
             <div v-for="a in articles" :key="a.title.en"
-                 class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 rounded-2xl p-5 hover:border-sky-400/50 dark:hover:border-sky-500/60 transition">
+                class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 rounded-2xl p-5 hover:border-sky-400/50 dark:hover:border-sky-500/60 transition">
               <div class="text-lg font-semibold text-sky-700 dark:text-sky-300">{{ a.title[locale] }}</div>
               <div class="text-xs mt-1 text-slate-500 dark:text-slate-400">{{ a.date }}</div>
               <div class="mt-3 flex flex-wrap gap-2">
@@ -172,8 +188,8 @@
                       class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
               </div>
               <div class="mt-4">
-                <a :href="a.link" target="_blank" rel="noopener"
-                   class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                <a :href="'article.html?slug=' + (a.slug || encodeURIComponent(a.title.en))"
+                  class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
                   {{ t('sections.read_more') }}
                 </a>
               </div>
