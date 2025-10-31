@@ -1,0 +1,30 @@
+[
+ {
+  "name": "Pottery Matching",
+  "slug": "pottery",
+  "image": "assets/pottery_match.png",
+  "tech": [
+    "Python", "PyTorch", "FAISS", "OpenCV", "NetworkX"
+  ],
+  "github": "https://github.com/liyuanmontreal/h690_pottery_matching",
+  "description": {
+    "en": "Self-supervised pottery fragment reconstruction using FAISS retrieval, Siamese networks, geometric consistency, and reference shape priors.",
+    "zh": "基于 FAISS 检索、孪生网络、几何一致性与参考陶器形状的自监督陶片重建项目。",
+    "fr": "Reconstruction auto-supervisée de fragments de poterie utilisant FAISS, réseaux siamois, cohérence géométrique et formes de référence."
+  }
+},
+{
+  "name": "EcoSys",
+  "slug": "ecosys",
+  "image": "assets/ecosys.jpg",
+  "tech": [
+    "Python", "NumPy", "Pandas","Matplotlib", "Streamlit","Dynamic Programming"
+  ],
+  "github": "https://github.com/liyuanmontreal/ecosys",
+  "description": {
+    "en": "A dynamic programming-based ecosystem simulator. The goal is to balance economic returns with ecological conservation to optimize sustainable harvesting strategies.",
+    "zh": "一个基于动态规划的生态系统模拟器。目标是平衡经济收益与生态保护，实现可持续收获策略优化。",
+    "fr": "Un simulateur d’écosystème basé sur la programmation dynamique. L’objectif est d’équilibrer les rendements économiques avec la conservation écologique pour optimiser les stratégies de récolte durable."
+  }
+}
+]

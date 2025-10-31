@@ -1,0 +1,47 @@
+[
+    {
+    "name": "MetaMirror",
+    "slug" : "metamirror",
+    "image": "assets/metamirror.jpg",
+    "tech": [
+        "Python", "PyTorch", "NumPy", "Matplotlib", "Scikit-learn"
+    ],
+     "github": "https://github.com/liyuanmontreal/metamirror",
+
+    "description": {
+      "en": "MetaMirror is a research project exploring whether a machine learning model can learn about itself — by training a meta-model to predict the base model’s next performance, enabling self-referential and introspective learning.",
+      "zh": "MetaMirror 是一个探索机器学习模型能否“理解自身”的研究项目——通过训练一个元模型来预测主模型下一步的表现，从而实现神经网络的自我建模与反思。",
+      "fr": "MetaMirror est un projet de recherche explorant si un modèle d’apprentissage automatique peut apprendre sur lui-même — en entraînant un méta-modèle à prédire la performance future du modèle de base, favorisant un apprentissage auto-référentiel et introspectif."
+    }
+  },
+  
+  {
+  "name": "Lyra",
+  "slug": "lyra",
+  "image": "assets/lyra.png",
+  "tech": [
+    "Nature Language"
+  ],
+  "github": "https://github.com/liyuanmontreal/Lyra",
+  "description": {
+    "en": "Lyra is a high-density semantic language that use P–A–E three-dimensional semantic structure to represent untranslatable words around the world. ",
+    "zh": "Lyra是一种高密度语义语言，采用P–A–E三维语义结构来表示世界各地的不可翻译词汇。",
+    "fr": "Lyra est une langue sémantique à haute densité qui utilise une structure sémantique tridimensionnelle P–A–E pour représenter les mots intraduisibles à travers le monde."
+  }
+},
+  {
+  "name": "ProvabilityPredictor",
+  "slug": "provabilitypredictor",
+  "image": "assets/godelian.jpg",
+  "tech": [
+     "PyTorch", "Logic Engine","Synthetic Data","Scikit-Learn", "Matplotlib"
+  ],
+  "github": "https://github.com/liyuanmontreal/ProvabilityPredictor",
+  "description": {
+    "en": "Provability Predictor — A mini ML project that learns patterns of logical provability and exhibits Gödelian 'incompleteness' phenomena within neural networks",
+    "zh": "可证性预测器——一个学习逻辑可证性模式、并在神经网络中呈现哥德尔式“不完备”现象的迷你机器学习项目",
+    "fr": "Provability Predictor — Un mini projet ML qui apprend les modèles de prouvabilité logique et présente des phénomènes 'd'incomplétude' Gödelienne au sein des réseaux neuronaux"
+  }
+}
+
+]

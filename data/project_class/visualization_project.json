@@ -1,0 +1,30 @@
+[
+     {
+    "name": "Bio diversity Dashboard",
+    "slug": "escope",
+    "image": "assets/escope.jpg",
+    "tech": [
+      "Python", "Streamlit", "Matplotlib", "Pandas" ,"seaborn"       
+    ],
+    "github": "https://github.com/liyuanmontreal/ecoscope",
+    "description": {
+      "en": "Biodiversity Data Visualization Dashboard",
+      "zh": "生物多样性数据可视化仪表盘",
+      "fr": "Tableau de bord de visualisation des données sur la biodiversité"
+    }
+  } ,
+    {
+    "name": "NHL Goal Prediction",
+    "slug": "nhl",
+    "image": "assets/nhl.jpg",
+    "tech": [
+      "Python","Streamlit","Docker","RestfulAPI","Logistic regression", "Neural Networks","XGBoost", "Decision Tree","Matplotlib"
+    ],
+    "github": "https://github.com/liyuanmontreal/NHL-Game-Score-Prediction-Project",
+    "description": {
+      "en": "NHL Game Data Analysis, Visualization, and Goal Prediction.",
+      "zh": "NHL冰球比赛数据分析、可视化与得分预测。",
+      "fr": "Analyse, visualisation et prédiction des buts des matchs de hockey de la LNH."
+    }
+  }
+]

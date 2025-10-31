@@ -19,9 +19,28 @@
   const App = {
     setup() {
       const { t, locale } = VueI18n.useI18n()
+      const formatInterests = (s) => {
+        if (!s) return ''
+        return s
+          .replace(/\r\n/g, '<br>')
+          .replace(/\r/g, '<br>')
+          .replace(/\n/g, '<br>')
+      }
+      
       const research = ref([])
       const applied = ref([])
       const articles = ref([])
+   
+      const model_project = ref([])
+      const cutting_edge_project = ref([])
+      const explore_project = ref([])
+      const visualization_project = ref([])
+      const reality_project = ref([])
+      const application_project = ref([])
+      const creative_product_project = ref([])
+      const tools_project = ref([])
+      
+        
 
       const preferredDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
       const stored = localStorage.getItem('theme')
@@ -37,6 +56,19 @@
         research.value = await (await fetch('data/research.json')).json()
         applied.value = await (await fetch('data/applied.json')).json()
         articles.value = await (await fetch('data/articles.json')).json()
+
+        //子小节项目
+        model_project.value = await (await fetch('data/project_class/model_project.json')).json() //Model Reproduction Projects
+        cutting_edge_project.value = await (await fetch('data/project_class/cutting_edge_project.json')).json() //Cutting-edge Concept Projects
+        explore_project.value = await (await fetch('data/project_class/explore_project.json')).json() // Exploratory Projects
+        visualization_project.value = await (await fetch('data/project_class/visualization_project.json')).json() // Data Visualization Projects 
+        reality_project.value = await (await fetch('data/project_class/reality_project.json')).json() //  Mainstream Application Projects 
+        application_project.value = await (await fetch('data/project_class/application_project.json')).json() //  Real-world Problem Projects
+        creative_product_project.value = await (await fetch('data/project_class/creative_product_project.json')).json() // Creative Products 
+        tools_project.value = await (await fetch('data/project_class/tools_project.json')).json() //   Interesting Tools
+
+
+        
 
         if (window.particlesJS) {
           const colors = theme.value === 'dark' ? ["#60a5fa", "#a78bfa", "#22d3ee"] : ["#7dd3fc", "#a78bfa", "#22d3ee"]
@@ -73,7 +105,10 @@
         kaggle: "https://www.kaggle.com/yuanlimtl"
       }
 
-      return { t, locale, switchLang, theme, toggleTheme, research, applied, articles, links }
+      return { t, locale, switchLang, theme, toggleTheme, research, applied, articles, links, 
+        model_project,cutting_edge_project,explore_project, visualization_project, reality_project, 
+        application_project,creative_product_project,tools_project,formatInterests  }
+
     },
     template: `
       <div class="relative min-h-screen bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors">
@@ -88,7 +123,8 @@
 
      
             <div class="flex gap-2">
-              <button v-for="l in ['en','zh','fr']"
+              <!--<button v-for="l in ['en','zh','fr']" -->
+              <button v-for="l in ['en','zh']"
                 :key="l"
                 @click="switchLang(l)"
                 :class="['px-2 py-1 rounded border transition',
@@ -111,17 +147,23 @@
 
         <section id="interests" class="max-w-6xl mx-auto px-6 mt-10">
           <h3 class="text-xl md:text-2xl font-semibold  text-sky-700 dark:text-sky-300  mb-3">{{ t('interests.title') }}</h3>
-          <p class="text-slate-700 dark:text-slate-300 leading-relaxed">{{ t('interests.text') }}</p>
+          <p class="text-slate-700 dark:text-slate-300 leading-relaxed interests-text"> {{t('interests.text')}}</p>
         </section>
+       
+
 
         <!-- PROJECTS 容器：内部再分 Research / Application 两个子块 -->
         <section id="projects" class="max-w-6xl mx-auto px-6 mt-12">
           <h3 class="text-xl md:text-2xl font-semibold text-sky-700 dark:text-sky-300 mb-6">{{ t('sections.projects') }}</h3>
 
           <!-- 子小节 Research -->
-          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.research') }}</div>
+          <h5 class="text-l md:text-xl font-semibold text-sky-500 dark:text-sky-300 mb-6">{{ t('sections.research') }}</h5>
+
+         
+          <!-- 子小节 模型复现项目 -->
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.model_project') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
-            <div v-for="p in research" :key="p.name"
+            <div v-for="p in model_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
               <img :src="p.image" class="w-full h-44 object-cover" alt="">
               <div class="p-4">
@@ -137,19 +179,83 @@
                     {{ t('projects.view_code') }}
                   </a>
                   <!-- 新增：Details（跳转到项目详情页） -->
-                  <a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                  <!--<a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
                       class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
                       {{ t('sections.read_more') }}
-                  </a>
+                  </a>-->
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- 子小节 Application -->
-          <div id="projects-application" class="mt-10 mb-3 text-sky-400/90 font-medium">{{ t('sections.applied') }}</div>
+
+          <!-- 子小节 前沿项目 -->
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.cutting_edge_project') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
-            <div v-for="p in applied" :key="p.name"
+            <div v-for="p in cutting_edge_project" :key="p.name"
+              class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
+              <img :src="p.image" class="w-full h-44 object-cover" alt="">
+              <div class="p-4">
+                <div class="text-base md:text-lg font-semibold text-sky-700 dark:text-sky-300">{{ p.name }}</div>
+                <p class="mt-1 text-sm text-slate-700 dark:text-slate-300">{{ p.description[locale] }}</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span v-for="tag in p.tech" :key="tag"
+                    class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
+                </div>
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details（跳转到项目详情页） -->
+                  <!--<a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                      class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                      {{ t('sections.read_more') }}
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 子小节 探索项目 -->
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.explore_project') }}</div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div v-for="p in explore_project" :key="p.name"
+              class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
+              <img :src="p.image" class="w-full h-44 object-cover" alt="">
+              <div class="p-4">
+                <div class="text-base md:text-lg font-semibold text-sky-700 dark:text-sky-300">{{ p.name }}</div>
+                <p class="mt-1 text-sm text-slate-700 dark:text-slate-300">{{ p.description[locale] }}</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span v-for="tag in p.tech" :key="tag"
+                    class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
+                </div>
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details（跳转到项目详情页） -->
+                  <!--<a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                      class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                      {{ t('sections.read_more') }}
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+        <!-- 子小节 应用项目 -->        
+        <h5 class="text-l md:text-xl font-semibold text-sky-500 dark:text-sky-300 mb-6">{{ t('sections.applied') }}</h5>
+
+
+          
+          <!-- 子小节 数据可视化项目 -->
+          <div id="projects-application" class="mt-10 mb-3 text-sky-400/90 font-medium">{{ t('sections.visualization_project') }}</div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div v-for="p in visualization_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
               <img :src="p.image" class="w-full h-44 object-cover" alt="">
               <div class="p-4">
@@ -173,6 +279,127 @@
               </div>
             </div>
           </div>
+    
+
+
+        <!-- 子小节 主流应用领域项目 -->
+          <div id="projects-application" class="mt-10 mb-3 text-sky-400/90 font-medium">{{ t('sections.application_project') }}</div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div v-for="p in application_project" :key="p.name"
+              class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
+              <img :src="p.image" class="w-full h-44 object-cover" alt="">
+              <div class="p-4">
+                <div class="text-base md:text-lg font-semibold text-sky-700 dark:text-sky-300">{{ p.name }}</div>
+                <p class="mt-1 text-sm text-slate-700 dark:text-slate-300">{{ p.description[locale] }}</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span v-for="tag in p.tech" :key="tag"
+                    class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
+                </div>
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details -->
+                  <!-- <a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('sections.read_more') }}
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <!-- 子小节 现实问题 -->
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.reality_project') }}</div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div v-for="p in reality_project" :key="p.name"
+              class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
+              <img :src="p.image" class="w-full h-44 object-cover" alt="">
+              <div class="p-4">
+                <div class="text-base md:text-lg font-semibold text-sky-700 dark:text-sky-300">{{ p.name }}</div>
+                <p class="mt-1 text-sm text-slate-700 dark:text-slate-300">{{ p.description[locale] }}</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span v-for="tag in p.tech" :key="tag"
+                    class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
+                </div>
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details（跳转到项目详情页） -->
+                  <!--<a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                      class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                      {{ t('sections.read_more') }}
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+         <!-- 子小节 创意产品 -->
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.creative_product_project') }}</div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div v-for="p in creative_product_project" :key="p.name"
+              class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
+              <img :src="p.image" class="w-full h-44 object-cover" alt="">
+              <div class="p-4">
+                <div class="text-base md:text-lg font-semibold text-sky-700 dark:text-sky-300">{{ p.name }}</div>
+                <p class="mt-1 text-sm text-slate-700 dark:text-slate-300">{{ p.description[locale] }}</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span v-for="tag in p.tech" :key="tag"
+                    class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
+                </div>
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details（跳转到项目详情页） -->
+                  <!--<a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                      class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                      {{ t('sections.read_more') }}
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <!-- 子小节 有趣工具 -->
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.tools_project') }}</div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div v-for="p in tools_project" :key="p.name"
+              class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
+              <img :src="p.image" class="w-full h-44 object-cover" alt="">
+              <div class="p-4">
+                <div class="text-base md:text-lg font-semibold text-sky-700 dark:text-sky-300">{{ p.name }}</div>
+                <p class="mt-1 text-sm text-slate-700 dark:text-slate-300">{{ p.description[locale] }}</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span v-for="tag in p.tech" :key="tag"
+                    class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
+                </div>
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details（跳转到项目详情页） -->
+                  <!--<a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                      class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                      {{ t('sections.read_more') }}
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </section>
 
         <!-- Articles（改为 read more 跳 article.html） -->

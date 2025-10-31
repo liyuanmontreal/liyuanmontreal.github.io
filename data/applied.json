@@ -1,75 +1,10 @@
   [
-  {
-    "name": "NHL Goal Prediction",
-    "slug": "nhl",
-    "image": "assets/nhl.jpg",
-    "tech": [
-      "Python","Streamlit","Docker","RestfulAPI","Logistic regression", "Neural Networks","XGBoost", "Decision Tree","Matplotlib"
-    ],
-    "github": "https://github.com/liyuanmontreal/NHL-Game-Score-Prediction-Project",
-    "description": {
-      "en": "NHL Game Data Analysis, Visualization, and Goal Prediction.",
-      "zh": "NHL冰球比赛数据分析、可视化与得分预测。",
-      "fr": "Analyse, visualisation et prédiction des buts des matchs de hockey de la LNH."
-    }
-  },
+
   
-  {
-    "name": "Bio diversity Dashboard",
-    "slug": "escope",
-    "image": "assets/escope.jpg",
-    "tech": [
-      "Python", "Streamlit", "Matplotlib", "Pandas" ,"seaborn"       
-    ],
-    "github": "https://github.com/liyuanmontreal/ecoscope",
-    "description": {
-      "en": "Biodiversity Data Visualization Dashboard",
-      "zh": "生物多样性数据可视化仪表盘",
-      "fr": "Tableau de bord de visualisation des données sur la biodiversité"
-    }
-  },
-  {
-  "name": "Pottery Matching",
-  "slug": "pottery",
-  "image": "assets/pottery_match.png",
-  "tech": [
-    "Python", "PyTorch", "FAISS", "OpenCV", "NetworkX"
-  ],
-  "github": "https://github.com/liyuanmontreal/h690_pottery_matching",
-  "description": {
-    "en": "Self-supervised pottery fragment reconstruction using FAISS retrieval, Siamese networks, geometric consistency, and reference shape priors.",
-    "zh": "基于 FAISS 检索、孪生网络、几何一致性与参考陶器形状的自监督陶片重建项目。",
-    "fr": "Reconstruction auto-supervisée de fragments de poterie utilisant FAISS, réseaux siamois, cohérence géométrique et formes de référence."
-  }
-},
-{
-  "name": "MyEyes",
-  "slug": "myeyes",
-  "image": "assets/my_eyes.jpg",
-  "tech": [
-    "Python", "feedparser", "BeautifulSoup", "BART"
-  ],
-  "github": "https://github.com/liyuanmontreal/MyEyes",
-  "description": {
-    "en": "MyEyes is an AI tool that automatically scrapes content from news sources and generates daily long-form summaries.",
-    "zh": "MyEyes 是一个自动从新闻源抓取内容并生成每日长摘要的 AI 工具。",
-    "fr": "MyEyes est un outil d’IA qui extrait automatiquement le contenu des sources d’actualités et génère des résumés longs quotidiens."
-  }
-},
-{
-  "name": "EcoSys",
-  "slug": "ecosys",
-  "image": "assets/ecosys.jpg",
-  "tech": [
-    "Python", "NumPy", "Pandas","Matplotlib", "Streamlit","Dynamic Programming"
-  ],
-  "github": "https://github.com/liyuanmontreal/ecosys",
-  "description": {
-    "en": "A dynamic programming-based ecosystem simulator. The goal is to balance economic returns with ecological conservation to optimize sustainable harvesting strategies.",
-    "zh": "一个基于动态规划的生态系统模拟器。目标是平衡经济收益与生态保护，实现可持续收获策略优化。",
-    "fr": "Un simulateur d’écosystème basé sur la programmation dynamique. L’objectif est d’équilibrer les rendements économiques avec la conservation écologique pour optimiser les stratégies de récolte durable."
-  }
-}
+
+ 
+
+
 ]
 
       

@@ -10,23 +10,31 @@
   },
   "hero": {
     "greeting": "Hi, I'm Yuan Li",
-    "title": "Student",
+    "title": "Student, Machine Learning Developer",
     "subtitle": ""
   },
 
   "sections": {
     "projects": "Featured Projects",
-    "research": "Research Projects",
+    "research": "Theory Projects",
     "applied": "Application Projects",
     "articles": "Articles",
     "read_more": "Read More",
-    "back": "Back"
+    "back": "Back",
+    "model_project": "Model Reproduction Projects ",  
+    "cutting_edge_project": "ML Concept Projects",  
+    "explore_project": "Exploratory Projects",  
+    "visualization_project": "Data Visualization Projects",  
+    "application_project": "Mainstream Application Projects",  
+    "reality_project": "Real-world Problem Projects",  
+    "creative_product_project": "Creative Products",  
+    "tools_project": "Interesting Tools"
   },
 
   "interests": {
     "title": "Research Interests",
-    "text": "My main research interests currently lie in machine learning problems inspired by other disciplines, solving complex real-world problems with AI, and creative AI projects."
-  }, 
+    "text": "My current work can be divided into several parts:\nTheoretical Part:\n1. Learning and reproducing some well-known models and libraries. Projects such as miniGPT, miniCLIP, and Group Equivariant Network aim to learn and understand their principles.\n2. Learning and implementing some machine learning concepts, such as quantum computing and Federated Learning. The aim is to understand the theory and current status of this area.\n3. Some exploratory projects inspired by other disciplines, aiming to make some beneficial attempts and explorations. This part includes self-referential series projects inspired by philosophy and logic, incompleteness theorem projects inspired by mathematical logic, and collaborative multi-agent projects based on a priori beliefs inspired by social psychology.\n\nApplication Part:\n1. Data visualization projects aiming to master various methods of transforming data into aesthetically pleasing and valuable visual information.\n2. ML projects in mainstream application areas, such as voice recognition, stock prediction, autonomous driving, security, and AI programming, aiming to understand working principles and industry development.\n3. Other attempts to solve real-world problems using ML: such as pottery tiling, traversal algorithms based on the Rubik's Cube mapping principle, and desire path projects to solve urban planning problems etc.\n4. Creative products, such as AI singer covers and jigsaw, puzzle weaving designers etc.\n5. Interesting tools, such as information steganography, mind reading, and unruly apps.\n"
+  },
   "projects": {
     "title": "Projects",
     "view_code": "GitHub"

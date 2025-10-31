@@ -1,0 +1,46 @@
+[
+
+ {
+    "name": "LLM‑Small",
+    "image": "assets/llm_small.png",
+    "slug"  : "llm-small",
+    "tech": [
+        "Python", "PyTorch", "Transformers", "SentencePiece","Tokenizer retraining"
+    ],
+     "github": "https://github.com/liyuanmontreal/llm_small",
+    "description": {
+      "en": "LLM-Small is a compact, lightweight ChatGPT style language model.",
+      "zh": "LLM-Small 是一个从零开始构建的小型语言模型。",
+      "fr": "LLM-Small est un modèle de langage léger."
+    }
+    
+  },  
+   {
+    "name": "MiniClip",
+    "slug" : "miniclip",
+    "image": "assets/miniclip.png",
+    "tech": [
+        "Python", "Contrastive Learning", "Dual-Encoder Architecture"
+    ],
+     "github": "https://github.com/liyuanmontreal/miniclip",
+    "description": {
+      "en": "MiniCLIP is a lightweight contrastive learning model that aligns images and text in a shared semantic space for symbolic visual understanding.",
+      "zh": "MiniCLIP 是一个轻量级对比学习模型，通过映射图像与文本到同一语义空间，实现符号级视觉语义对齐与理解。",
+      "fr": "MiniCLIP est un modèle d’apprentissage contrastif léger qui aligne les images et le texte dans un espace sémantique partagé pour une compréhension visuelle symbolique."
+    }
+  },
+   {
+    "name": "ParityGEquivCNN",
+    "slug" : "pnn",
+    "image": "assets/ParityGEquivCNN.jpg",
+    "tech": [
+        "Python", "PyTorch", "NumPy", "Matplotlib"
+    ],
+     "github": "https://github.com/liyuanmontreal/ParityGEquivCNN",
+    "description": {
+      "en": "Parity-G Equivariant Convolutional Networks for Robust Feature Learning and Symmetric Structure Perception.",
+      "zh": "本项目是一个群等变卷积网络。受宇称对称启发，实现具备内在镜像等变性的卷积网络，实现结构对称感知与鲁棒特征学习",
+      "fr": "Réseaux de Convolution Équivariants Parité-G pour l’Apprentissage de Caractéristiques Robustes et la Perception de Structures Symétriques."
+    }
+  }
+]

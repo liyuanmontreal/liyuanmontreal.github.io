@@ -15,16 +15,23 @@
   },  
   "sections": {
     "projects": "项目集",
-    "research": "研究项目",
+    "research": "理论项目",
     "applied": "应用项目",
     "articles": "文章",
     "read_more": "阅读更多",
-    "back": "返回"
+    "back": "返回",
+    "model_project": "模型复现项目",  
+    "cutting_edge_project": "ML概念项目",  
+    "explore_project": "探索项目",  
+    "visualization_project": "数据可视化项目",  
+    "application_project": "主流应用项目",  
+    "reality_project": "现实问题项目",  
+    "creative_product_project": "创意产品",  
+    "tools_project": "有趣工具"
   },
-  "interests": {
-    "title": "研究兴趣",
-    "text": "目前我的主要研究兴趣是受其他学科启发的机器学习问题，解决复杂现实问题，以及创意AI项目。"
- 
+ "interests": {
+  "title": "研究兴趣",
+  "text": "目前我的工作可以分为几个部分：\n\n理论部分\n1.学习和复现一些著名模型和库。项目如miniGPT，iniCLIP，Group Equivariant Network等，目的是学习和理解其原理。\n2.一些机器学习概念的学习和实现，如量子计算和Federated Learning等。目的是了解这部分的理论和现状。\n3.一些受其他学科启发的探索项目，目的是做一些有益的尝试和探索。这部分包括受哲学和逻辑启发的自指系列项目，  受数理逻辑启发的不完备定理项目，受社会心理学启发的先验信念多智能体的协作项目等。\n\n应用部分\n1.一些数据可视化项目，目的是为了掌握数据转化为美观、有价值的视觉信息的各种方法。\n2.一些主流应用领域的ML项目，如声音识别，股票预测，自动驾驶，安全，AI编程等，目的是理解工作原理和业界的发展情况。\n3.用ML解决现实问题的其他尝试：如陶器拼接，基于魔方映射原理的遍历算法，解决城市规划问题的欲望路径项目等。\n4.创意产品，如AI歌手翻唱，拼图、编织设计器\n5.有趣的工具，如信息隐写，读心术，不听话的应用等。\n"
   },
   "projects": {
     "title": "项目集",

@@ -1,0 +1,16 @@
+[
+   {
+  "name": "MyEyes",
+  "slug": "myeyes",
+  "image": "assets/my_eyes.jpg",
+  "tech": [
+    "Python", "feedparser", "BeautifulSoup", "BART"
+  ],
+  "github": "https://github.com/liyuanmontreal/MyEyes",
+  "description": {
+    "en": "MyEyes is an AI tool that automatically scrapes content from news sources and generates daily long-form summaries.",
+    "zh": "MyEyes 是一个自动从新闻源抓取内容并生成每日长摘要的 AI 工具。",
+    "fr": "MyEyes est un outil d’IA qui extrait automatiquement le contenu des sources d’actualités et génère des résumés longs quotidiens."
+  }
+}
+]

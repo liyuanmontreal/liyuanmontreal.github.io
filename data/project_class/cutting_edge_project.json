@@ -1,0 +1,16 @@
+[
+  {
+  "name": "HybridQuantumClassicalNN",
+  "slug": "qnn",
+  "image": "assets/HybridQuantumClassicalNN.jpg",
+  "tech": [
+    "Python", "PyTorch", "PennyLane", "NumPy", "Matplotlib"
+  ],
+  "github": "https://github.com/liyuanmontreal/HybridQuantumClassicalNN",
+  "description": {
+    "en": "A hybrid quantum–classical neural network that combines differentiable quantum circuits with deep learning encoders for small-sample image classification and quantum feature exploration.",
+    "zh": "一种混合量子–经典神经网络，将可微量子电路与深度学习编码器结合，用于小样本图像分类与量子特征探索。",
+    "fr": "Un réseau neuronal hybride quantique-classique combinant des circuits quantiques différentiables avec des encodeurs d’apprentissage profond pour la classification d’images à faible échantillon et l’exploration de caractéristiques quantiques."
+  }
+}
+]
