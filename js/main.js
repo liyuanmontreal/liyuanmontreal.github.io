@@ -165,10 +165,10 @@
                     {{ t('projects.view_code') }}
                   </a>
                   <!-- 新增：Details -->
-                  <a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                  <!-- <a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
                     class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
                     {{ t('sections.read_more') }}
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </div>
