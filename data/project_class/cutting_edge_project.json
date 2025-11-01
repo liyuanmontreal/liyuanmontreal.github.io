@@ -26,5 +26,19 @@
     "zh": "一个基于动态规划的生态系统模拟器。目标是平衡经济收益与生态保护，实现可持续收获策略优化。",
     "fr": "Un simulateur d’écosystème basé sur la programmation dynamique. L’objectif est d’équilibrer les rendements économiques avec la conservation écologique pour optimiser les stratégies de récolte durable."
   }
+},
+{
+  "name": "Shadow",
+  "slug": "shadow",
+  "image": "assets/shadow.png",
+  "tech": [
+    "Python", "NumPy", "NegMAS","Matplotlib", "Streamlit","RL"
+  ],
+  "github": "https://github.com/liyuanmontreal/Shadow",
+  "description": {
+    "en": "Shadow is a multi-issue automated negotiation agent that learns concession and acceptance strategies to compete with ANAC-style AI opponents using game-theoretic reasoning and opponent modeling.",
+    "zh": "Shadow 是一个多议题自动化谈判智能体，结合博弈论策略与对手建模，通过学习让步与接受机制来对战 ANAC 风格的智能体。",
+    "fr": "Shadow est un agent de négociation automatisé multi-enjeux, intégrant raisonnement stratégique et modélisation de l’adversaire pour apprendre à concéder et accepter face à des agents IA de type ANAC."
+  }
 }
 ]
