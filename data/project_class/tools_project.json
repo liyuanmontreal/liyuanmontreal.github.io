@@ -5,7 +5,7 @@
   "slug": "stego",
   "image": "assets/stego.png",
   "tech": [
-    "Python", "Pillow", "LSB", "PyTorch", "CNN", "Streamlit","matplotlib"
+    "Python", "Pillow", "LSB", "PyTorch", "CNN", "Streamlit","Matplotlib"
   ],
   "github": "https://github.com/liyuanmontreal/stego",
   "description": {
@@ -36,7 +36,7 @@
   "slug": "almostos",
   "image": "assets/almostos.png",
   "tech": [
-    "HTML5", "CSS3", "ES6+", "stochastic UI logic","adversarial interaction patterns"
+    "HTML5", "CSS3", "ES6+", "Stochastic UI logic","Adversarial interaction patterns"
   ],
   "github": "https://github.com/liyuanmontreal/almostos",
   "description": {
