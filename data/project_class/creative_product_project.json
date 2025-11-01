@@ -1,5 +1,19 @@
 [
- 
+   {
+    "name": "song-translator",
+    "slug": "songtranslator",
+    "image": "assets/song_translator.png",
+    "tech": [
+      "Python","Whisper","FFmpeg","LRC timestamp generation","gTTS"   
+
+    ],
+    "github": "https://github.com/liyuanmontreal/song_translator",  
+    "description": {
+      "en": "An AI-powered cross-language singing system that uploads a song and automatically generates a translated AI cover with timing alignment, TTS synthesis, and karaoke subtitles.",
+      "zh": "一个支持上传歌曲并自动生成跨语言 AI 翻唱的系统，结合歌词翻译、时序对齐、语音合成与字幕生成，实现智能音乐再创作。",
+      "fr": ""
+    }
+  }
 
 
 ]

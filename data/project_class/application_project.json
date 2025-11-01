@@ -8,8 +8,8 @@
     ],
     "github": "https://github.com/liyuanmontreal/IFT-6759-Advanced-ML-Projectroject",
     "description": {
-      "en": "Multimodal Dialogue Emotion Recognition and Prediction Model Based on Text and Speech Fusion.",
-      "zh": "基于文本与语音融合的多模态对话情感识别和预测模型。",
+      "en": "Multimodal Dialogue Emotion Recognition and Prediction Model Based on Text and Speech Fusion.(Team Project)",
+      "zh": "基于文本与语音融合的多模态对话情感识别和预测模型。(小组项目）",
       "fr": "Modèle de reconnaissance et de prédiction des émotions dans les dialogues multimodaux basé sur la fusion du texte et de la parole."
     }
   },
@@ -23,9 +23,24 @@
     ],
     "github": "https://github.com/liyuanmontreal/IFT6289-NLP_with_DL",
     "description": {
-      "en": "Short-Term Stock Price Prediction Model Integrating Financial News, Social Media, Macroeconomic Indicators, and Historical Market Data.",
-      "zh": "融合金融新闻、社交媒体、宏观经济数据和历史股票数据的短期股票价格预测模型。",
+      "en": "Short-Term Stock Price Prediction Model Integrating Financial News, Social Media, Macroeconomic Indicators, and Historical Market Data.(Team Project)",
+      "zh": "融合金融新闻、社交媒体、宏观经济数据和历史股票数据的短期股票价格预测模型。(小组项目）",
       "fr": "Modèle de prédiction à court terme des prix des actions intégrant les nouvelles financières, les médias sociaux, les indicateurs macroéconomiques et les données boursières historiques."
+    }
+  },
+    {
+    "name": "Mini-IDS",
+    "slug": "ids",
+    "image": "assets/ids.png",
+    "tech": [
+      "Python","Pandas","numpy","scikit-learn","joblib","XGBoost","matplotlib","Streamlit"   
+
+    ],
+    "github": "https://github.com/liyuanmontreal/IDS",  
+    "description": {
+      "en": "Mini-IDS is a lightweight intrusion-detection prototype that extracts flow features from network logs, uses an XGBoost baseline to detect malicious traffic, and provides confusion-matrix visualization and a simple web UI.",
+      "zh": "Mini-IDS 是一个轻量级入侵检测原型，能从网络日志提取流量特征，使用 XGBoost 基线模型检测并可视化恶意流量。",
+      "fr": ""
     }
   }
 

@@ -26,5 +26,19 @@
       "zh": "NHL冰球比赛数据分析、可视化与得分预测。",
       "fr": "Analyse, visualisation et prédiction des buts des matchs de hockey de la LNH."
     }
+  },
+    {
+    "name": "Crime hotspots Forecasting",
+    "slug": "crimehotspots",
+    "image": "assets/hotspots.png",
+    "tech": [
+      "Python","Pandas","Geospatial Analysis","Random Forest","Streamlit"
+    ],
+    "github": "https://github.com/liyuanmontreal/crime_hotspot",  
+    "description": {
+      "en": "An intelligent crime hotspot forecasting and visualization system that uses real city crime data and spatial grids (H3) to predict high-risk areas and support public-safety decision-making.",
+      "zh": "一个基于真实城市犯罪数据的智能热点预测与可视化系统，通过机器学习与地理网格（H3）分析未来高风险区域，辅助公共安全决策",
+      "fr": ""
+    }
   }
 ]

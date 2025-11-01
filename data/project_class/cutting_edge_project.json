@@ -12,5 +12,19 @@
     "zh": "一种混合量子–经典神经网络，将可微量子电路与深度学习编码器结合，用于小样本图像分类与量子特征探索。",
     "fr": "Un réseau neuronal hybride quantique-classique combinant des circuits quantiques différentiables avec des encodeurs d’apprentissage profond pour la classification d’images à faible échantillon et l’exploration de caractéristiques quantiques."
   }
+},
+{
+  "name": "EcoSys",
+  "slug": "ecosys",
+  "image": "assets/ecosys.jpg",
+  "tech": [
+    "Python", "NumPy", "Pandas","Matplotlib", "Streamlit","Dynamic Programming"
+  ],
+  "github": "https://github.com/liyuanmontreal/ecosys",
+  "description": {
+    "en": "A dynamic programming-based ecosystem simulator. The goal is to balance economic returns with ecological conservation to optimize sustainable harvesting strategies.",
+    "zh": "一个基于动态规划的生态系统模拟器。目标是平衡经济收益与生态保护，实现可持续收获策略优化。",
+    "fr": "Un simulateur d’écosystème basé sur la programmation dynamique. L’objectif est d’équilibrer les rendements économiques avec la conservation écologique pour optimiser les stratégies de récolte durable."
+  }
 }
 ]

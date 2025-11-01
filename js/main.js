@@ -123,8 +123,8 @@
 
      
             <div class="flex gap-2">
-              <!--<button v-for="l in ['en','zh','fr']" -->
-              <button v-for="l in ['en','zh']"
+              <button v-for="l in ['en','zh','fr']" 
+             
                 :key="l"
                 @click="switchLang(l)"
                 :class="['px-2 py-1 rounded border transition',
