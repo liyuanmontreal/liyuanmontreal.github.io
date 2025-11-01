@@ -27,13 +27,20 @@
     "application_project" : "Projet d'application grand public",
     "reality_project" : "Projet de résolution de problèmes concrets",
     "creative_product_project" : "Produits créatifs",
-    "tools_project" : "Outils intéressants"
+    "tools_project" : "Outils intéressants",
+    "model_project_detail": "Apprentissage et reproduction de modèles et de bibliothèques connus",
+    "cutting_edge_project_detail": "Apprentissage des concepts du ML",
+    "explore_project_detail": "Projets expérimentaux et exploratoires inspirés d'autres disciplines",
+    "visualization_project_detail": "Projets dans le domaine de l'analyse et de la visualisation des données",
+    "application_project_detail": "Projets dans le domaine des applications commerciales",
+    "reality_project_detail": "Tentatives de résolution de problèmes concrets grâce au ML",
+    "creative_product_project_detail": "Produits créatifs",
+    "tools_project_detail": "Petits outils divers"
   },
   
   "interests": {
     "title": "Domaines de recherche",
-    "text": "Mes principaux domaines de recherche actuels sont les problèmes d'apprentissage automatique inspirés par d'autres disciplines, la résolution de problèmes complexes du monde réel avec l'IA et les projets créatifs en IA."
-  },
+    "text": "Actuellement axée sur l'apprentissage par renforcement et la collaboration multi-agents. Pour d'autres domaines d'intérêt, veuillez vous référer aux projets.\n"},
   "projects": {
     "title": "Projets",
     "view_code": "GitHub"

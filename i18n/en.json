@@ -28,12 +28,20 @@
     "application_project": "Mainstream Application Projects",  
     "reality_project": "Real-world Problem Projects",  
     "creative_product_project": "Creative Products",  
-    "tools_project": "Interesting Tools"
+    "tools_project": "Interesting Tools",
+    "model_project_detail": "Learn and reproduce some famous models and libraries",
+    "cutting_edge_project_detail": "ML concept learning projects",
+    "explore_project_detail": "Experimental and interdisciplinary exploratory projects",  
+    "visualization_project_detail": "Data analysis and visualization projects",  
+    "application_project_detail": "Projects in mainstream application areas",  
+    "reality_project_detail": "Some attempts to solve real-world problems with ML",  
+    "creative_product_project_detail": "Some creative products",  
+    "tools_project_detail": "Miscellaneous small tools"
   },
 
   "interests": {
     "title": "Research Interests",
-    "text": "My current work can be divided into several parts:\nTheoretical Part:\n1. Learning and reproducing some well-known models and libraries. Projects such as miniGPT, miniCLIP, and Group Equivariant Network aim to learn and understand their principles.\n2. Learning and implementing some machine learning concepts, such as quantum computing and Federated Learning. The aim is to understand the theory and current status of this area.\n3. Some exploratory projects inspired by other disciplines, aiming to make some beneficial attempts and explorations. This part includes self-referential series projects inspired by philosophy and logic, incompleteness theorem projects inspired by mathematical logic, and collaborative multi-agent projects based on a priori beliefs inspired by social psychology.\n\nApplication Part:\n1. Data visualization projects aiming to master various methods of transforming data into aesthetically pleasing and valuable visual information.\n2. ML projects in mainstream application areas, such as voice recognition, stock prediction, autonomous driving, security, and AI programming, aiming to understand working principles and industry development.\n3. Other attempts to solve real-world problems using ML: such as pottery tiling, traversal algorithms based on the Rubik's Cube mapping principle, and desire path projects to solve urban planning problems etc.\n4. Creative products, such as AI singer covers and jigsaw, puzzle weaving designers etc.\n5. Interesting tools, such as information steganography, mind reading, and unruly apps.\n"
+    "text": "Currently focusing on reinforcement learning and multi-agent collaboration. For other areas of interest, please refer to the projects.\n"
   },
   "projects": {
     "title": "Projects",

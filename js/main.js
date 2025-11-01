@@ -158,10 +158,11 @@
 
           <!-- 子小节 Research -->
           <h5 class="text-l md:text-xl font-semibold text-sky-500 dark:text-sky-300 mb-6">{{ t('sections.research') }}</h5>
-
+       
          
           <!-- 子小节 模型复现项目 -->
           <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.model_project') }}</div>
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-small">{{ t('sections.model_project.detail') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in model_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
@@ -191,6 +192,8 @@
 
           <!-- 子小节 前沿项目 -->
           <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.cutting_edge_project') }}</div>
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-small">{{ t('sections.cutting_edge_project.detail') }}</div>
+        
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in cutting_edge_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
@@ -220,6 +223,7 @@
 
           <!-- 子小节 探索项目 -->
           <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.explore_project') }}</div>
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-small">{{ t('sections.explore_project.detail') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in explore_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
@@ -254,6 +258,7 @@
           
           <!-- 子小节 数据可视化项目 -->
           <div id="projects-application" class="mt-10 mb-3 text-sky-400/90 font-medium">{{ t('sections.visualization_project') }}</div>
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-small">{{ t('sections.visualization_project.detail') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in visualization_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
@@ -284,6 +289,7 @@
 
         <!-- 子小节 主流应用领域项目 -->
           <div id="projects-application" class="mt-10 mb-3 text-sky-400/90 font-medium">{{ t('sections.application_project') }}</div>
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-small">{{ t('sections.application_project.detail') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in application_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
@@ -313,6 +319,7 @@
 
            <!-- 子小节 现实问题 -->
           <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.reality_project') }}</div>
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-small">{{ t('sections.reality_project.detail') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in reality_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
@@ -343,6 +350,7 @@
 
          <!-- 子小节 创意产品 -->
           <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.creative_product_project') }}</div>
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-small">{{ t('sections.creative_product_project.detail') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in creative_product_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
@@ -373,6 +381,7 @@
           
           <!-- 子小节 有趣工具 -->
           <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.tools_project') }}</div>
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-small">{{ t('sections.tools_project.detail') }}</div>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in tools_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
