@@ -24,7 +24,7 @@
   "description": {
     "en": "An interactive simulator that models how humans create “desire paths” across lawns, revealing emergent optimal routes through collective behavior, with frame-by-frame visualization of path evolution.",
     "zh": "一个模拟人类在草坪上踏出“欲望路径”的交互式系统，通过自组织行为展示如何从真实行为中涌现最优路径，并支持逐帧可视化演化过程",
-    "fr": ""
+    "fr": "Un système interactif qui simule le « chemin du désir » que les humains créent sur une pelouse, démontrant comment les chemins optimaux émergent du comportement du monde réel grâce à des actions auto-organisées, et prenant en charge la visualisation image par image du processus évolutif."
   }
 },
  {

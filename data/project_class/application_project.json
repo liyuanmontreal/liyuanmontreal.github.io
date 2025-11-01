@@ -40,7 +40,7 @@
     "description": {
       "en": "Mini-IDS is a lightweight intrusion-detection prototype that extracts flow features from network logs, uses an XGBoost baseline to detect malicious traffic, and provides confusion-matrix visualization and a simple web UI.",
       "zh": "Mini-IDS 是一个轻量级入侵检测原型，能从网络日志提取流量特征，使用 XGBoost 基线模型检测并可视化恶意流量。",
-      "fr": ""
+      "fr": "Mini-IDS est un prototype léger de détection d'intrusion qui extrait les caractéristiques du trafic des journaux réseau et utilise le modèle de base XGBoost pour détecter et visualiser le trafic malveillant."
     }
   }
 

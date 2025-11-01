@@ -19,7 +19,15 @@
     "research": "Researchion Projects",
     "articles": "Articles",
     "read_more": "Lire la suite",
-    "back": "Retour"
+    "back": "Retour",
+    "model_project" : "Projet de reproduction de modèle",
+    "cutting_edge_project" : "Projet de concept d'apprentissage automatique",
+    "explore_project" : "Projet d'exploration",
+    "visualization_project" : "Projet de visualisation de données",
+    "application_project" : "Projet d'application grand public",
+    "reality_project" : "Projet de résolution de problèmes concrets",
+    "creative_product_project" : "Produits créatifs",
+    "tools_project" : "Outils intéressants"
   },
   
   "interests": {
