@@ -1,5 +1,19 @@
-[
-  {
+[ 
+{
+  "name": "LatentVision",
+  "slug": "latentvision",
+  "image": "assets/latentvision.png",
+  "tech": [
+    "Python", "PyTorch","NumPy", "Scikit-Learn", "UMAP-Learn", "Matplotlib","Plotly","Streamlit","PCA/UMAP","Vit","Representation Learning","Dimensionality Reduction", "Model Interpretability"
+  ],
+  "github": "https://github.com/liyuanmontreal/LatentVision",
+  "description": {
+    "en": "LatentVision is a tool for projecting and visualizing visual Transformer latent spaces, supporting PCA/UMAP dimensionality reduction, clustering analysis, 3D/interactive point cloud visualization, and representational geometry analysis.",
+    "zh": "LatentVision — 一个用于投影与可视化视觉 Transformer 嵌入空间的工具，支持 PCA/UMAP 降维、聚类分析、3D/交互式点云可视化与表征几何分析。",
+    "fr": "LatentVision est un outil de projection et de visualisation des espaces latents des transformateurs visuels, prenant en charge la réduction de dimension PCA/UMAP, l’analyse de clustering, la visualisation de nuages de points 3D/interactifs et l’analyse de la géométrie représentationnelle."
+  }
+},
+ {
   "name": "HybridQuantumClassicalNN",
   "slug": "qnn",
   "image": "assets/HybridQuantumClassicalNN.jpg",
