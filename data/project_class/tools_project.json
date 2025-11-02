@@ -14,8 +14,22 @@
     "fr": "StegoScope est un système de stéganographie visuelle et de détection par IA qui cache des messages secrets dans des images, les extrait et utilise l’apprentissage profond pour détecter le contenu stégo."
   }
 },
-  
+     
    {
+  "name": "AlmostOS",
+  "slug": "almostos",
+  "image": "assets/almostos.png",
+  "tech": [
+    "HTML5", "CSS3", "ES6+", "Stochastic UI logic","Adversarial interaction patterns"
+  ],
+  "github": "https://github.com/liyuanmontreal/almostos",
+  "description": {
+    "en": "The Grand Collection of Unusable UI Controls, delicate, gentle offset,never angry,never submissive",
+    "zh": "不可用控件大合集.有点优雅，温柔偏移，永不生气,永不屈服",
+    "fr": "La Grande Collection de Contrôles d’Interface Utilisateur Inutilisables. Délicat, décalage doux, jamais en colère, jamais soumis"
+  }
+}, 
+{
   "name": "MyEyes",
   "slug": "myeyes",
   "image": "assets/my_eyes.jpg",
@@ -29,20 +43,18 @@
     "fr": "MyEyes est un outil d’IA qui extrait automatiquement le contenu des sources d’actualités et génère des résumés longs quotidiens."
   }
 },
-
-  
-   {
-  "name": "AlmostOS",
-  "slug": "almostos",
-  "image": "assets/almostos.png",
+{
+  "name": "Bookscape",
+  "slug": "bookscape",
+  "image": "assets/bookscape.jpg",
   "tech": [
-    "HTML5", "CSS3", "ES6+", "Stochastic UI logic","Adversarial interaction patterns"
+    "Python", "Tesseract", "OCR"
   ],
-  "github": "https://github.com/liyuanmontreal/almostos",
+  "github": "https://github.com/liyuanmontreal/Bookscape",
   "description": {
-    "en": "The Grand Collection of Unusable UI Controls, delicate, gentle offset,never angry,never submissive",
-    "zh": "不可用控件大合集.有点优雅，温柔偏移，永不生气,永不屈服",
-    "fr": "La Grande Collection de Contrôles d’Interface Utilisateur Inutilisables. Délicat, décalage doux, jamais en colère, jamais soumis"
+    "en": "Bookscape is a tool that detects book spines and automatically extracts book titles. Currently uses Tesseract, performance needs improvement.",
+    "zh": "一个检测书脊并自动提取书名的小工具。目前使用Tesseract,效果不好，需要改进。",
+    "fr": "Bookscape est un outil qui détecte les dos de livres et extrait automatiquement les titres des livres. Utilise actuellement Tesseract, les performances doivent être améliorées."
   }
 }
 ]
