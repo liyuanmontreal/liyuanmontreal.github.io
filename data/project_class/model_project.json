@@ -32,7 +32,7 @@
    {
     "name": "ParityGEquivCNN",
     "slug" : "pnn",
-    "image": "assets/ParityGEquivCNN.jpg",
+    "image": "assets/ParityGEquivCNN.png",
     "tech": [
         "Python", "PyTorch", "NumPy", "Matplotlib"
     ],

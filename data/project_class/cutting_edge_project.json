@@ -54,5 +54,33 @@
     "zh": "Shadow 是一个多议题自动化谈判智能体，结合博弈论策略与对手建模，通过学习让步与接受机制来对战 ANAC 风格的智能体。",
     "fr": "Shadow est un agent de négociation automatisé multi-enjeux, intégrant raisonnement stratégique et modélisation de l’adversaire pour apprendre à concéder et accepter face à des agents IA de type ANAC."
   }
+},
+  {
+  "name": "SpyNet",
+  "slug": "spynet",
+  "image": "assets/spynet.png",
+  "tech": [
+     "Python","PyTorch", "FastAPI","NumPy","Scikit-learn","Differential Privacy","Noise Injection","Quantization"
+    ],
+  "github": "https://github.com/liyuanmontreal/spynet",
+  "description": {
+    "en": "SpyNet is an interactive simulation of model stealing and defense in machine learning, demonstrating how an attacker can replicate a model through API queries and how defenses like noise, quantization, and differential privacy can protect it.",
+    "zh": "SpyNet 是一个展示机器学习模型窃取与防御机制的交互式实验系统，模拟“间谍”如何通过 API 查询重建模型，以及“防御者”如何利用噪声、量化与差分隐私保护模型安全。",
+    "fr": "SpyNet est une simulation interactive d’espionnage et de défense en apprentissage automatique, illustrant comment un attaquant peut reproduire un modèle via des requêtes API et comment des défenses comme le bruit, la quantification et la confidentialité différentielle peuvent le protéger."
+  }
+},
+  {
+  "name": "TrustNet",
+  "slug": "trustnet",
+  "image": "assets/trustnet.png",
+  "tech": [
+     "Python","NumPy","Matplotlib","Logistic Regression","Federated Learning"
+    ],
+  "github": "https://github.com/liyuanmontreal/trustnet",
+  "description": {
+    "en": "TrustNet: A socially-inspired federated learning framework that builds dynamic trust graphs to identify noisy or adversarial clients and enable more robust collaborative training.",
+    "zh": "一种受社会心理机制启发的联邦学习框架，通过动态信任矩阵识别噪声与恶意节点，实现更稳健的协同训练。",
+    "fr": "TrustNet : un cadre d’apprentissage fédéré inspiré de la psychologie sociale, utilisant une matrice de confiance dynamique pour détecter les clients bruyants ou malveillants et renforcer la collaboration."
+  }
 }
 ]
