@@ -22,6 +22,7 @@
     "back": "返回",
     "model_project": "模型复现项目",  
     "cutting_edge_project": "ML概念项目",  
+    "agent_project": "多智能体和社会仿真项目",
     "explore_project": "探索项目",  
     "visualization_project": "数据可视化项目",  
     "application_project": "主流应用项目",  
@@ -30,6 +31,7 @@
     "tools_project": "有趣工具",    
     "model_project_detail": "学习和复现一些著名模型和库",  
     "cutting_edge_project_detail": "ML概念的学习项目",  
+    "agent_project_detail": "多智能体和社会仿真相关的项目",
     "explore_project_detail": "实验项目和受其他学科启发的探索项目",  
     "visualization_project_detail": "数据分析与可视化方向的项目",  
     "application_project_detail": "商业应用方向的学习项目",  
@@ -39,7 +41,7 @@
   },
  "interests": {
   "title": "研究兴趣",
-  "text": "目前比较专注于强化学习和多智能体协作。其他兴趣方向请详见项目。\n"
+  "text": "目前的研究兴趣包括强化学习、多智能体协作、社会模拟、复杂决策问题和生态问题。其他兴趣方向请详见项目。\n"
   },
   "projects": {
     "title": "项目集",
@@ -58,5 +60,13 @@
   "footer": {
     "cta": "更多项目请访问 GitHub",
     "rights": "版权所有。"
+  },
+  "articles": {
+    "notes": "学习笔记",
+    "papers": "论文笔记",
+    "essays": "随笔杂谈",
+    "all": "全部",
+    "read_more": "阅读全文",
+    "empty": "暂无文章"
   }
 }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Articles</title>
+
+  
+  
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/vue-i18n@9/dist/vue-i18n.global.prod.js"></script>
+
+  <!-- 1) 先加载插件脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.js"></script>
+
+    <!-- 2) 再声明 tailwind.config，并把插件挂进去 -->
+    <script>
+    tailwind = {
+        config: {
+        darkMode: 'class',
+        plugins: [typography]   // 这里使用上面加载的全局变量 typography
+        }
+    }
+    </script>
+
+    <!-- 3) 最后再加载 Tailwind 本体 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- <script>
+    window.MathJax = {
+    tex: { inlineMath: [['\\(','\\)']] }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+
+
+  <style>
+    .grid-cards { display: grid; grid-template-columns: repeat(1,minmax(0,1fr)); gap: 1rem; }
+    @media (min-width: 768px){ .grid-cards { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+    @media (min-width: 1024px){ .grid-cards { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+    .card { background: rgba(15,23,42,.6); border: 1px solid rgba(51,65,85,.8); border-radius: 14px; }
+    .tag  { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid rgba(51,65,85,.9); background: rgba(2,6,23,.4); }
+    
+
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100">
+<div id="app" class="max-w-7xl mx-auto px-6 py-8">
+
+  <div class="flex items-center justify-between mb-6">
+    <a href="index.html#articles" class="text-sky-300 hover:underline">&larr; {{ t('sections.back') || 'Back' }}</a>
+    <div class="flex items-center gap-2">
+      <a :href="'articles.html?cat=notes'"  class="underline text-sky-300"> {{ t('articles.notes')  || 'Notes' }} </a>
+      <span class="text-slate-600">|</span>
+      <a :href="'articles.html?cat=papers'" class="underline text-sky-300"> {{ t('articles.papers') || 'Paper Summaries' }} </a>
+      <span class="text-slate-600">|</span>
+      <a :href="'articles.html?cat=essays'" class="underline text-sky-300"> {{ t('articles.essays') || 'Essays' }} </a>
+      <span class="text-slate-600">|</span>
+      <a href="articles.html" class="underline text-sky-300"> {{ t('articles.all') || 'All' }} </a>
+      <div class="ml-4 flex gap-1">
+        <button v-for="l in ['en','zh','fr']" :key="l"
+                class="px-2 py-1 text-xs rounded border border-slate-700 hover:bg-slate-800"
+                :class="locale===l ? 'bg-slate-800 text-sky-300' : 'text-slate-300'"
+                @click="switchLang(l)">{{ l.toUpperCase() }}</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 如果 URL ?cat=xxx，则只显示该类；否则三栏都显示 -->
+  <section v-for="sec in sectionsToShow" :key="sec.key" class="mb-10">
+    <div class="flex items-end justify-between mb-3">
+      <h2 class="text-xl font-semibold text-sky-200">{{ sec.title }}</h2>
+      <a :href="'articles.html?cat='+sec.key" class="text-sky-300 hover:underline text-sm" v-if="!cat">
+        {{ t('articles.view_more') || 'View only this category' }}
+      </a>
+    </div>
+
+    <div class="grid-cards">
+      <div v-for="a in sec.items" :key="a.slug" class="card p-4">
+        <img v-if="a.cover" :src="a.cover" class="w-full h-36 object-cover rounded-md border border-slate-700 mb-3" :alt="a.title?.[locale] || a.title?.en">
+        <div class="text-sm text-slate-400">{{ a.date }}</div>
+        <h3 class="text-lg font-semibold text-sky-100 mt-1">{{ a.title?.[locale] || a.title?.en }}</h3>
+        <div class="mt-2 text-slate-300 text-sm line-clamp-3">{{ a.excerpt?.[locale] || a.excerpt?.en }}</div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <span class="tag" v-for="tag in (a.tags||[])" :key="tag">{{ tag }}</span>
+        </div>
+        <div class="mt-4 flex gap-2">
+          <a :href="'article.html?slug='+a.slug" class="px-3 py-1.5 rounded bg-sky-600 hover:bg-sky-500 text-white text-xs">
+            {{ t('articles.read_more') || 'Read more' }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div v-if="sec.items.length===0" class="text-slate-400 text-sm mt-3">
+      {{ t('articles.empty') || 'No articles yet.' }}
+    </div>
+  </section>
+
+</div>
+
+<script>
+;(async () => {
+  const { createApp, ref, computed } = Vue
+  const { createI18n } = VueI18n
+
+  const qs = new URL(location.href).searchParams
+  const cat = (qs.get('cat') || '').toLowerCase() // notes | papers | essays | ''
+
+  async function loadJSON(p){ return (await fetch(p + '?v='+Date.now(), { cache:'no-store' })).json() }
+
+  const messages = {
+    en: await loadJSON('i18n/en.json').catch(()=>({sections:{back:'Back'}, articles:{notes:'Notes', papers:'Paper Summaries', essays:'Essays', all:'All', read_more:'Read more', view_more:'View only this category', empty:'No articles yet.'}})),
+    zh: await loadJSON('i18n/zh.json').catch(()=>({sections:{back:'返回'}, articles:{notes:'学习笔记', papers:'论文 Summary', essays:'随笔杂谈', all:'全部', read_more:'阅读全文', view_more:'仅查看此分类', empty:'暂无文章'}})),
+    fr: await loadJSON('i18n/fr.json').catch(()=>({sections:{back:'Retour'}, articles:{notes:'Notes', papers:'Résumés d’articles', essays:'Essais', all:'Tout', read_more:'Lire la suite', view_more:'Voir uniquement cette catégorie', empty:'Pas encore d’articles.'}})),
+  }
+  const initialLocale = (qs.get('lang') || localStorage.getItem('locale') || 'en').toLowerCase()
+  const i18n = createI18n({ legacy:false, locale: initialLocale, fallbackLocale:'en', messages })
+
+  const App = {
+    setup(){
+      const { t, locale } = VueI18n.useI18n()
+      const all = ref([])
+
+      ;(async () => { all.value = await loadJSON('data/articles.json').catch(()=>[]) })()
+
+      const sections = computed(() => {
+        const L = locale.value
+        const toCard = (a) => a // 这里直接返回；需要可在此裁剪 excerpt
+        return [
+          { key:'notes',  title: t('articles.notes')  || 'Notes',            items: all.value.filter(a=>a.category==='notes').map(toCard)  },
+          { key:'papers', title: t('articles.papers') || 'Paper Summaries',  items: all.value.filter(a=>a.category==='papers').map(toCard) },
+          { key:'essays', title: t('articles.essays') || 'Essays',           items: all.value.filter(a=>a.category==='essays').map(toCard) }
+        ]
+      })
+
+      const sectionsToShow = computed(() => {
+        if (!cat) return sections.value
+        return sections.value.filter(s => s.key === cat)
+      })
+
+      const switchLang = (l) => {
+        locale.value = l
+        localStorage.setItem('locale', l)
+        // 保持在当前页
+      }
+
+      return { t, locale, switchLang, cat, sectionsToShow }
+    }
+  }
+
+  Vue.createApp(App).use(i18n).mount('#app')
+})()
+</script>
+</body>
+</html>

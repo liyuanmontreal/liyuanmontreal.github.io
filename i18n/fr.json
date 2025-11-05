@@ -22,6 +22,7 @@
     "back": "Retour",
     "model_project" : "Projet de reproduction de modèle",
     "cutting_edge_project" : "Projet de concept d'apprentissage automatique",
+    "agent_project": "Projet multi-agents et simulation sociale",
     "explore_project" : "Projet d'exploration",
     "visualization_project" : "Projet de visualisation de données",
     "application_project" : "Projet d'application grand public",
@@ -30,6 +31,7 @@
     "tools_project" : "Outils intéressants",
     "model_project_detail": "Apprentissage et reproduction de modèles et de bibliothèques connus",
     "cutting_edge_project_detail": "Apprentissage des concepts du ML",
+    "agent_project_detail": "Projets liés aux multi-agents et à la simulation sociale",
     "explore_project_detail": "Projets expérimentaux et exploratoires inspirés d'autres disciplines",
     "visualization_project_detail": "Projets dans le domaine de l'analyse et de la visualisation des données",
     "application_project_detail": "Projets d'apprentissage dans les domaines d'application grand public",
@@ -40,7 +42,8 @@
   
   "interests": {
     "title": "Domaines de recherche",
-    "text": "Actuellement axée sur l'apprentissage par renforcement et la collaboration multi-agents. Pour d'autres domaines d'intérêt, veuillez vous référer aux projets.\n"},
+    "text": "Actuellement intéressée par l'apprentissage par renforcement, la collaboration multi-agents, la simulation sociale, les problèmes de prise de décision complexe et les problèmes écologiques. Pour d'autres domaines d'intérêt, veuillez vous référer aux projets.\n"
+  },
   "projects": {
     "title": "Projets",
     "view_code": "GitHub"
@@ -58,5 +61,14 @@
   "footer": {
     "cta": "Voir plus sur GitHub",
     "rights": "Tous droits réservés."
-  }
+  },
+    "articles": {
+    "notes": "Notes d'étude",
+    "papers": "Résumé de papiers",
+    "essays": "Essais",
+    "all": "Tous",
+    "read_more": "Lire l'article complet",
+    "empty": "Pas encore d'articles"
+  
+}
 }

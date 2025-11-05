@@ -23,6 +23,7 @@
     "back": "Back",
     "model_project": "Model Reproduction Projects",  
     "cutting_edge_project": "ML Concept Projects",  
+    "agent_project": "Multi-Agent and Social Simulation Projects",
     "explore_project": "Exploratory Projects",  
     "visualization_project": "Data Visualization Projects",  
     "application_project": "Mainstream Application Projects",  
@@ -31,6 +32,7 @@
     "tools_project": "Interesting Tools",
     "model_project_detail": "Learn and reproduce some famous models and libraries",
     "cutting_edge_project_detail": "ML concept learning projects",
+    "agent_project_detail": "Multi-agent and social simulation related projects",
     "explore_project_detail": "Experimental and interdisciplinary exploratory projects",  
     "visualization_project_detail": "Data analysis and visualization projects",  
     "application_project_detail": "Learning projects in mainstream application areas",  
@@ -41,7 +43,7 @@
 
   "interests": {
     "title": "Research Interests",
-    "text": "Currently focusing on reinforcement learning and multi-agent collaboration. For other areas of interest, please refer to the projects.\n"
+    "text": "Currently interested at reinforcement learning, multi-agent collaboration, social simulation, complex decision-making problem and ecological problem. For other areas of interest, please refer to the projects.\n"
   },
   "projects": {
     "title": "Projects",
@@ -60,5 +62,13 @@
   "footer": {
     "cta": "View more on GitHub",
     "rights": "All rights reserved."
+  },
+    "articles": {
+    "notes": "Study Notes",
+    "papers": "Paper Summaries",
+    "essays": "Essays",
+    "all": "All",
+    "read_more": "Read Full Article",
+    "empty": "No articles yet"
   }
 }

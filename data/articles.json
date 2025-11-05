@@ -1,28 +1,99 @@
 [
+  {            
+    "title": {
+      "en": "A Dynamic Model of the Montréal Public Transit Strike  ",
+      "zh": "蒙特利尔公交罢工问题的理论模型",
+      "fr": "Modèle dynamique de la grève des transports en commun de Montréal"
+    },
+    "slug": "montreal-strike",
+    "category": "essays",   
+    "date": "2025-11-05",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "https://medium.com/@liyuan.montreal/montreal-strike",
+    "tags": [   
+      "Dynamic Model","Multi-Agent Negotiation","Socio-Political Dynamics"  
+      ],                  
+    "cover": "assets/articles/montreal-strike.png"  
+  },
     {
     "title": {
       "en": "The Birth Chronicle of Lyra",
       "zh": "Lyra诞生手记",
       "fr": "Chronique de la naissance de Lyra"
     },
-    "date": "2025-10-24",
     "slug": "lyra-birth",
+    "category": "essays", 
+    "date": "2025-10-24", 
     "link": "https://medium.com/@liyuan.montreal/lyra-birth",
     "tags": [
     "Nature Language"
-    ]
+    ],
+    "cover": "assets/articles/lyra.png"  
   },
-  {
+
+  {            
     "title": {
-      "en": "When Machines Start to Think -Seven Philosophical Themes and the Birth of Absurd Intelligence",
-      "zh": "当机器开始思考——七个哲学主题与荒诞智能的诞生",
-      "fr": "Quand les machines commencent à penser - Sept thèmes philosophiques et la naissance de l'intelligence absurde"
+      "en": "Seven Philosophical Themes in Machine Learning",
+      "zh": "机器学习中的七个哲学主题",
+      "fr": "Sept thèmes philosophiques en apprentissage automatique"
     },
-    "date": "2025-10-20",
     "slug": "when-machines-start-to-think",
-    "link": "https://medium.com/@liyuan.montreal/when-machines-start-to-think-d12eb075f25f",
-    "tags": [
-    "Machine Learning","Philosophy","Self Supervised Learning","Meta Learning"
-    ]
+    "category": "essays",   
+    "date": "2025-10-20",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "https://medium.com/@liyuan.montreal/when-machines-start-to-think-d12eb075f25f",
+    "tags": [   
+      "Machine Learning","Philosophy","Self Supervised Learning","Meta Learning"  
+      ],                  
+    "cover": "assets/articles/seven.png"  
+  },
+
+  {            
+    "title": {
+      "en": "Reinforcement Learning Study Notes - Chapter 1: Introduction",
+      "zh": "强化学习学习笔记 —— 第1章 导论",
+      "fr": "Notes d'étude sur le renforcement - Chapitre 1 : Introduction"
+    },
+    "slug": "01-intro",
+    "category": "notes",   
+    "date": "2025-11-05",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "",
+    "tags": [   
+      "Refeorcement Learning","Notes","Book Summary"
+      ],                  
+    "cover": "assets/articles/RL.png"  
+  },
+    {            
+    "title": {
+      "en": "Paper Summary: On the Difficulty of Training Recurrent Neural Networks",
+      "zh": "论文阅读：关于训练循环神经网络的难点",
+      "fr": "Paper Summary:Sur la difficulté d'entraîner des réseaux de neurones récurrents"
+    },
+    "slug": "on-the-difficulty",
+    "category": "papers",   
+    "date": "2025-02-05",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "",
+    "tags": [   
+      "Neural Networks"
+      ],                  
+    "cover": "assets/articles/on_the-difficulty.png"  
   }
 ]

@@ -92,6 +92,14 @@
     }
     .prose p, .prose li { white-space: pre-wrap; } */
     pre, code { background: transparent !important; }
+
+
+    /* 手写标题层级，覆盖 Preflight 的 inherit */
+  .prose :where(h1){font-size:1.875rem;line-height:2.25rem;margin:1.8rem 0 1rem;font-weight:700;color:#bae6fd;}
+  .prose :where(h2){font-size:1.5rem;  line-height:2rem;   margin:1.6rem 0 .9rem; font-weight:700;color:#bae6fd;}
+  .prose :where(h3){font-size:1.25rem; line-height:1.75rem;margin:1.2rem 0 .7rem; font-weight:600;color:#cbd5e1;}
+  .prose :where(h4,h5,h6){margin:1rem 0 .5rem;font-weight:600;color:#cbd5e1;}
+  .prose :where(h1 + p, h2 + p, h3 + p){margin-top:.5rem;}
   </style>
 </head>
 
@@ -119,11 +127,12 @@
     </header>
 
     <article id="content" class="prose prose-invert mt-6"></article>
+    
 
     <div class="mt-8 flex gap-3">
       <a v-if="art && art.link && !hasInternalContent"
          :href="art.link" target="_blank"
-         class="px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-sm">
+         class="px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white ">
         {{ t('sections.open_external') || 'Open external link' }}
       </a>
       <a href="index.html#articles" class="px-3 py-1.5 rounded-lg border border-slate-600 text-slate-200 text-sm">

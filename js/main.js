@@ -33,6 +33,7 @@
    
       const model_project = ref([])
       const cutting_edge_project = ref([])
+      const agent_project = ref([])
       const explore_project = ref([])
       const visualization_project = ref([])
       const reality_project = ref([])
@@ -60,6 +61,7 @@
         //子小节项目
         model_project.value = await (await fetch('data/project_class/model_project.json')).json() //Model Reproduction Projects
         cutting_edge_project.value = await (await fetch('data/project_class/cutting_edge_project.json')).json() //Cutting-edge Concept Projects
+        agent_project.value = await (await fetch('data/project_class/agent_project.json')).json() //agent Projects
         explore_project.value = await (await fetch('data/project_class/explore_project.json')).json() // Exploratory Projects
         visualization_project.value = await (await fetch('data/project_class/visualization_project.json')).json() // Data Visualization Projects 
         reality_project.value = await (await fetch('data/project_class/reality_project.json')).json() //  Mainstream Application Projects 
@@ -106,7 +108,7 @@
       }
 
       return { t, locale, switchLang, theme, toggleTheme, research, applied, articles, links, 
-        model_project,cutting_edge_project,explore_project, visualization_project, reality_project, 
+        model_project,cutting_edge_project,agent_project, explore_project, visualization_project, reality_project, 
         application_project,creative_product_project,tools_project,formatInterests  }
 
     },
@@ -196,6 +198,37 @@
         
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in cutting_edge_project" :key="p.name"
+              class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
+              <img :src="p.image" class="w-full h-44 object-cover" alt="">
+              <div class="p-4">
+                <div class="text-base md:text-lg font-semibold text-sky-700 dark:text-sky-300">{{ p.name }}</div>
+                <p class="mt-1 text-sm text-slate-700 dark:text-slate-300">{{ p.description[locale] }}</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span v-for="tag in p.tech" :key="tag"
+                    class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
+                </div>
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details（跳转到项目详情页） -->
+                  <!--<a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                      class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                      {{ t('sections.read_more') }}
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 子小节 多智能体项目 -->
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.agent_project') }}</div>
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-small">{{ t('sections.agent_project_detail') }}</div>
+        
+          <div class="grid gap-6 md:grid-cols-3">
+            <div v-for="p in agent_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
               <img :src="p.image" class="w-full h-44 object-cover" alt="">
               <div class="p-4">
@@ -414,22 +447,20 @@
         <!-- Articles（改为 read more 跳 article.html） -->
         <section id="articles" class="max-w-6xl mx-auto px-6 mt-12">
           <h3 class="text-xl md:text-2xl font-semibold text-sky-700 dark:text-sky-300 mb-6">{{ t('sections.articles') }}</h3>
-          <div class="grid gap-6 md:grid-cols-2">
-            <div v-for="a in articles" :key="a.title.en"
-                class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 rounded-2xl p-5 hover:border-sky-400/50 dark:hover:border-sky-500/60 transition">
-              <div class="text-lg font-semibold text-sky-700 dark:text-sky-300">{{ a.title[locale] }}</div>
-              <div class="text-xs mt-1 text-slate-500 dark:text-slate-400">{{ a.date }}</div>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span v-for="tag in a.tags" :key="tag"
-                      class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
+          <div class="grid gap-6 md:grid-cols-3">
+          
+              <div class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 rounded-2xl p-5 hover:border-sky-400/50 dark:hover:border-sky-500/60 transition">
+                <div class="text-lg font-semibold text-sky-700 dark:text-sky-300">{{t('articles.notes') }}</div>
+                <a href="articles.html?cat=notes"   class="underline text-sky-300 mr-3">  {{ t('sections.read_more') }}</a>
               </div>
-              <div class="mt-4">
-                <a :href="'article.html?slug=' + (a.slug || encodeURIComponent(a.title.en))"
-                  class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
-                  {{ t('sections.read_more') }}
-                </a>
+              <div class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 rounded-2xl p-5 hover:border-sky-400/50 dark:hover:border-sky-500/60 transition">
+                <div class="text-lg font-semibold text-sky-700 dark:text-sky-300">{{t('articles.papers') }}</div>
+                <a href="articles.html?cat=papers"   class="underline text-sky-300 mr-3">  {{ t('sections.read_more') }}</a>
               </div>
-            </div>
+              <div class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 rounded-2xl p-5 hover:border-sky-400/50 dark:hover:border-sky-500/60 transition">
+                <div class="text-lg font-semibold text-sky-700 dark:text-sky-300">{{t('articles.essays') }}</div>
+                <a href="articles.html?cat=essays"   class="underline text-sky-300 mr-3">  {{ t('sections.read_more') }}</a>
+              </div>
           </div>
         </section>
 

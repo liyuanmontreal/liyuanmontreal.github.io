@@ -6,8 +6,21 @@
   <title>Project · Yuan Li</title>
 
   <!-- Tailwind (dark only via class) -->
-  <script>tailwind = { config: { darkMode: 'class' } }</script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 1) 先加载插件脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.js"></script>
+
+    <!-- 2) 再声明 tailwind.config，并把插件挂进去 -->
+    <script>
+    tailwind = {
+        config: {
+        darkMode: 'class',
+        plugins: [typography]   // 这里使用上面加载的全局变量 typography
+        }
+    }
+    </script>
+
+    <!-- 3) 最后再加载 Tailwind 本体 -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Vue & i18n -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
