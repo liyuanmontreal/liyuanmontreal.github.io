@@ -1,4 +1,4 @@
-Public transit strikes involve strategic interactions between unions, operators, and government, alongside public sentiment and service disruption. This article try to use a continuous-time model for the Montréal transit strike that integrates differential games, social dynamics, and behavioral choice theory. The model captures feedback loops between negotiation strategies, service supply, media attention, and political intervention.
+Public transit strikes involve strategic interactions between unions, operators, and government, alongside public sentiment and service disruption. If I remember correctly, there have been four bus strikes in Montreal as of today.This article try to use a continuous-time model for the Montréal transit strike that integrates differential games, social dynamics, and behavioral choice theory. The model captures feedback loops between negotiation strategies, service supply, media attention, and political intervention.
 
 
 

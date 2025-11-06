@@ -58,9 +58,9 @@
   
   {            
     "title": {
-      "en": "Reinforcement Learning Study Notes - Chapter 2: modeling:Why Build a Model? ",
+      "en": "RL Study Notes - Chapter 2: modeling:Why Build a Model? ",
       "zh": "强化学习学习笔记 —— 第2章 建模:为什么要构造模型",
-      "fr": "Notes d'étude sur le renforcement - Chapitre 2 : Modélisation Pourquoi construire un modèle"
+      "fr": "Notes d'étude sur RL - Chapitre 2 : Modélisation Pourquoi construire un modèle"
     },
     "slug": "01-intro",
     "category": "notes",   
@@ -79,9 +79,9 @@
 
   {            
     "title": {
-      "en": "Reinforcement Learning Study Notes - Chapter 1: Introduction",
+      "en": "RL Study Notes - Chapter 1: Introduction",
       "zh": "强化学习学习笔记 —— 第1章 导论",
-      "fr": "Notes d'étude sur le renforcement - Chapitre 1 : Introduction"
+      "fr": "Notes d'étude sur RL - Chapitre 1 : Introduction"
     },
     "slug": "01-intro",
     "category": "notes",   

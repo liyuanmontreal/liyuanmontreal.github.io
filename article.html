@@ -45,10 +45,16 @@
     .prose a { color: #7dd3fc; }
     /* 段落/列表项都把 \n 视作换行 */
     /* —— 改善 Markdown 正文的阅读性 —— */
-    .prose { 
-      max-width: 72ch;
+    .prose {   
+      max-width: 90ch;
       line-height: 1.9;               /* 整体行高（桌面端更松） */
     }
+    /* 较宽的阅读宽度 */
+  
+    @media (max-width: 640px) {
+      .prose { max-width: 100%; }  /* 小屏占满 */
+    }
+
     .prose img { border-radius: 0.75rem; border: 1px solid rgb(51 65 85); }
     .prose a { color: #7dd3fc; }
 
@@ -93,6 +99,9 @@
     .prose p, .prose li { white-space: pre-wrap; } */
     pre, code { background: transparent !important; }
 
+    /* 取消 prose 的固有宽度限制，让它跟随外层容器 */
+.prose { max-width: none; }
+
 
     /* 手写标题层级，覆盖 Preflight 的 inherit */
   .prose :where(h1){font-size:1.875rem;line-height:2.25rem;margin:1.8rem 0 1rem;font-weight:700;color:#bae6fd;}
@@ -104,7 +113,8 @@
 </head>
 
 <body class="bg-slate-900 text-slate-100">
-  <div id="app" class="max-w-4xl mx-auto px-6 py-8">
+
+  <div id="app" class="max-w-6xl mx-auto px-6 py-8">  <!-- 或 max-w-7xl -->
     <div class="flex items-center justify-between">
       <a href="index.html#articles" class="text-sky-300 hover:underline">&larr; {{ t('sections.back') || 'Back' }}</a>
       <div class="flex gap-2">
@@ -125,6 +135,8 @@
               class="text-xs px-2 py-1 rounded-full bg-slate-800/70 border border-slate-700">{{ tag }}</span>
       </div>
     </header>
+
+    <img v-if="art && art.cover" :src="art.cover" class="mt-5 max-w-[900px] max-h-[480px] object-contain rounded-xl border border-slate-700" :alt="art?.title">
 
     <article id="content" class="prose prose-invert mt-6"></article>
     

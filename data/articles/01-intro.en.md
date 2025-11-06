@@ -30,9 +30,10 @@ How to understand RL: it is a framework for **decision-making through experience
 - Sutton’s philosophy: *“Approximate the solution, not the problem.”* The problem is given and cannot be designed.  
 - This book’s engineering philosophy: *“In real-world settings, problems are not given—they are defined.”* One must model before learning.
 
+
 Thus, the core of RL is not algorithms, but **structuring decision problems**.  
 This book follows the line of *modeling and optimal control*, progressing from state-space models to dynamic programming, optimal control, model predictive control (MPC), and finally to reinforcement learning algorithms.
----
+
 
 # What Is the Meaning of Decision Problem Modeling?
 
@@ -72,8 +73,8 @@ Do not force all problems into a pre-defined framework; analyze each problem in 
 Good modeling aims not for universality but for *fit to the problem.*
 
 ### Defining the Problem Is Itself a Challenge
+
 Reward definitions may capture only part of what matters. We lack systematic tools for formulating problems—sometimes we must rely on humans.
----
 
 # Learning from Humans
 
@@ -97,11 +98,12 @@ The ultimate goal: build systems that **act for the right reasons**, combining l
 | **2. Preference Learning / RLHF** | Infer human value functions through comparison, ranking, or feedback. Under von Neumann–Morgenstern assumptions, preferences correspond to a utility function. | Requires human supervision and consistent feedback. |
 | **3. Supervised Learning** | Fit a black-box model to human-labeled data. | Strong results in lab settings (e.g., Decision Transformer), but weak generalization and constraint handling in the real world. |
 
+  
 The key is structure: **what makes learning feasible is not more data but better modeling**.  
 By modeling objectives, constraints, time structure, and information flow, we introduce inductive bias reflecting the physical and cognitive regularities of the world.  
 Learning only from human *behavior* risks misinterpretation; learning only from *data* risks instability.  
 **Combining the two—learning intentions from humans and structure from modeling—creates systems that act for the right reasons.**
----
+
 
 # The Road Ahead
 
