@@ -17,7 +17,7 @@
   {
     "name": "SemioticGPT",
     "slug": "semioticgpt",
-    "image": "assets/semioticgpt.png",
+    "image": "assets/semioticGPT.png",
     "tech": [
       "Python","CLIP","Pytorch","Llama","Streamlit","Contrastive learnin"
 
