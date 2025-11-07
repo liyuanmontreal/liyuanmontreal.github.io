@@ -55,14 +55,34 @@
       ],                  
     "cover": "assets/articles/seven.png"  
   },
+   {            
+    "title": {
+      "en": "RL -  3: Dynamics Models for Decision Making ",
+      "zh": "强化学习 - 3： 用于决策的动态模型",
+      "fr": "RL - 3 : Modèles dynamiques pour la prise de décision"
+    },
+    "slug": "03-ssm",
+    "category": "notes",   
+    "date": "2025-11-07",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "",
+    "tags": [   
+      "Refeorcement Learning","Notes","Book Summary"
+      ],                  
+    "cover": "assets/articles/RL.png"  
+  },
   
   {            
     "title": {
-      "en": "RL Study Notes - Chapter 2: modeling:Why Build a Model? ",
-      "zh": "强化学习学习笔记 —— 第2章 建模:为什么要构造模型",
-      "fr": "Notes d'étude sur RL - Chapitre 2 : Modélisation Pourquoi construire un modèle"
+      "en": "RL - 2: modeling:Why Build a Model? ",
+      "zh": "强化学习 -2: 建模:为什么要构造模型",
+      "fr": "RL - 2 : Modélisation Pourquoi construire un modèle"
     },
-    "slug": "01-intro",
+    "slug": "02-modeling",
     "category": "notes",   
     "date": "2025-11-05",  
     "excerpt": {
@@ -79,9 +99,9 @@
 
   {            
     "title": {
-      "en": "RL Study Notes - Chapter 1: Introduction",
-      "zh": "强化学习学习笔记 —— 第1章 导论",
-      "fr": "Notes d'étude sur RL - Chapitre 1 : Introduction"
+      "en": "RL -  1: Introduction",
+      "zh": "强化学习 - 1: 导论",
+      "fr": "RL - 1 : Introduction"
     },
     "slug": "01-intro",
     "category": "notes",   
