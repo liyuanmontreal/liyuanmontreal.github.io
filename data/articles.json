@@ -1,6 +1,27 @@
 [
   {            
     "title": {
+      "en": "Modeling 'Spiral of Silence'",
+      "zh": "“沉默的螺旋”的建模",
+      "fr": "Modélisation de la 'spirale du silence'"
+    },
+    "slug": "silent-spiral",
+    "category": "essays",   
+    "date": "2025-11-05",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "https://medium.com/@liyuan.montreal/silent-spiral",
+    "tags": [   
+      "Spiral of Silence","Opinion Dynamics","Agent-Based Modeling" 
+      ],                  
+    "cover": "assets/articles/silent-spiral.png"  
+  },
+
+  {            
+    "title": {
       "en": "A Dynamic Model of the Montréal Public Transit Strike  ",
       "zh": "蒙特利尔公交罢工问题的理论模型",
       "fr": "Modèle dynamique de la grève des transports en commun de Montréal"
