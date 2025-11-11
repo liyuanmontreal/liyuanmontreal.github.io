@@ -13,6 +13,20 @@
         "fr": "AI Strategy Lab est une plateforme de simulation stratégique basée sur l'apprentissage par renforcement et la théorie des jeux multi-agents, utilisée pour étudier la coopération et la compétition entre différentes factions et classes sur un champ de bataille virtuel."
         }
     },
+     {
+  "name": "World Model",
+  "slug": "world-model",
+  "image": "assets/world-model.png",
+  "tech": [
+    "Python", "NumPy", "Pandas","VAE","MDN-RNN","CMA-ES", "Matplotlib","Box2D + Pygame","Gymnasium (CarRacing-v2)"
+  ],
+  "github": "https://github.com/liyuanmontreal/world_model",
+  "description": {
+    "en": "This project reimplements the World Models framework using PyTorch, enabling intelligent agents to learn driving and planning within a 'dream world.'",
+    "zh": "本项目使用PyTorch重新实现了 World Models 框架，使智能体能在“梦境世界”中学习驾驶与规划。",
+    "fr": "Ce projet réimplémente le framework World Models en utilisant PyTorch, permettant aux agents intelligents d'apprendre à conduire et à planifier dans un « monde de rêve »."
+  }
+},
     {
   "name": "EcoSys",
   "slug": "ecosys",
