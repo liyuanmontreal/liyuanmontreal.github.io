@@ -1,5 +1,18 @@
 [
-   
+    {
+    "name": "Agent Society",
+    "slug": "agent-society",
+    "image": "assets/agent-society.png",
+    "tech": [
+        "Python","Ollama","Phi-3-min","Aeiva-style custom agent loop"
+        ],
+    "github": "https://github.com/liyuanmontreal/agent-society",
+    "description": {
+        "en": "Agent Society is an LLM-based multi-agent classroom simulation that models dynamic social interactions between students.",
+        "zh": "Agent Society 是一个基于大型语言模型的多智能体课堂仿真系统，模拟学生之间的动态交流与社会行为",
+        "fr": "Agent Society est une simulation de classe multi-agents basée sur des modèles de langage, reproduisant les interactions sociales entre étudiants."
+        }
+    }, 
     {
     "name": "Policy Lab",
     "slug": "policy-lab",
