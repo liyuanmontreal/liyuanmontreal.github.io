@@ -13,6 +13,20 @@
         "fr": "AI Strategy Lab est une plateforme de simulation stratégique basée sur l'apprentissage par renforcement et la théorie des jeux multi-agents, utilisée pour étudier la coopération et la compétition entre différentes factions et classes sur un champ de bataille virtuel."
         }
     },
+        {
+  "name": "Condor",
+  "slug": "condor",
+  "image": "assets/condor.jpg",
+  "tech": [
+    "Python", "NumPy", "MPC", "off-line RL"
+  ],
+  "github": "https://github.com/liyuanmontreal/condor",
+  "description": {
+    "en": "This project applies Model Predictive Control (MPC) and Offline Reinforcement Learning (RL) to optimize California condor recovery strategies",
+    "zh": "使用模型预测控制（MPC）与离线强化学习（Offline RL）优化加州秃鹰的生态恢复策略",
+    "fr": "Ce projet applique le contrôle prédictif par modèle (MPC) et l’apprentissage par renforcement hors-ligne (RL) pour optimiser la stratégie de rétablissement du condor de Californie"
+  }
+},
      {
   "name": "World Model",
   "slug": "world-model",
@@ -26,19 +40,6 @@
     "zh": "本项目使用PyTorch重新实现了 World Models 框架，使智能体能在“梦境世界”中学习驾驶与规划。",
     "fr": "Ce projet réimplémente le framework World Models en utilisant PyTorch, permettant aux agents intelligents d'apprendre à conduire et à planifier dans un « monde de rêve »."
   }
-},
-    {
-  "name": "EcoSys",
-  "slug": "ecosys",
-  "image": "assets/ecosys.jpg",
-  "tech": [
-    "Python", "NumPy", "Pandas","Matplotlib", "Streamlit","Dynamic Programming"
-  ],
-  "github": "https://github.com/liyuanmontreal/ecosys",
-  "description": {
-    "en": "A dynamic programming-based ecosystem simulator. The goal is to balance economic returns with ecological conservation to optimize sustainable harvesting strategies.",
-    "zh": "一个基于动态规划的生态系统模拟器。目标是平衡经济收益与生态保护，实现可持续收获策略优化。",
-    "fr": "Un simulateur d’écosystème basé sur la programmation dynamique. L’objectif est d’équilibrer les rendements économiques avec la conservation écologique pour optimiser les stratégies de récolte durable."
-  }
 }
+
 ]
