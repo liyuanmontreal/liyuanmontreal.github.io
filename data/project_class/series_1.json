@@ -1,0 +1,30 @@
+[
+       {
+    "name": "AI Strategy Lab",
+    "slug": "ai-strategy-lab",
+    "image": "assets/ai-strategy-lab.png",
+    "tech": [
+        "Python","NumPy","PettingZoo","Matplotlib","Gymnasiu","Reinforcement Learning","PPO"
+        ],
+    "github": "https://github.com/liyuanmontreal/ai-strategy-lab",
+    "description": {
+        "en": "AI Strategy Lab is a multi-agent strategy simulation platform powered by reinforcement learning, designed to study cooperation and competition among diverse unit types in virtual battlefields",
+        "zh": "AI Strategy Lab 是一个基于强化学习与多智能体博弈的策略模拟平台，用于研究虚拟战场中不同阵营与职业之间的协作与对抗。",
+        "fr": "AI Strategy Lab est une plateforme de simulation stratégique basée sur l'apprentissage par renforcement et la théorie des jeux multi-agents, utilisée pour étudier la coopération et la compétition entre différentes factions et classes sur un champ de bataille virtuel."
+        }
+    },
+    {
+  "name": "EcoSys",
+  "slug": "ecosys",
+  "image": "assets/ecosys.jpg",
+  "tech": [
+    "Python", "NumPy", "Pandas","Matplotlib", "Streamlit","Dynamic Programming"
+  ],
+  "github": "https://github.com/liyuanmontreal/ecosys",
+  "description": {
+    "en": "A dynamic programming-based ecosystem simulator. The goal is to balance economic returns with ecological conservation to optimize sustainable harvesting strategies.",
+    "zh": "一个基于动态规划的生态系统模拟器。目标是平衡经济收益与生态保护，实现可持续收获策略优化。",
+    "fr": "Un simulateur d’écosystème basé sur la programmation dynamique. L’objectif est d’équilibrer les rendements économiques avec la conservation écologique pour optimiser les stratégies de récolte durable."
+  }
+}
+]

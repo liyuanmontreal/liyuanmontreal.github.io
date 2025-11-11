@@ -1,0 +1,73 @@
+[
+   
+    {
+    "name": "Policy Lab",
+    "slug": "policy-lab",
+    "image": "assets/policy-lab.png",
+    "tech": [
+        "Python","NumPy","Reinforcement Learning","Streamlit"
+        ],
+    "github": "https://github.com/liyuanmontreal/policy-lab",
+    "description": {
+        "en": "Policy Lab is a socio-political simulation platform for modeling the dynamic impacts of policies on social trust, polarization, and governance capacity.",
+        "zh": "Policy Lab(政策实验室） 是一个社会政治模拟平台，用于建模政策对社会信任、极化与治理能力的动态影响。",
+        "fr": "Policy Lab est une plateforme de simulation socio-politique pour modéliser les impacts dynamiques des politiques sur la confiance sociale, la polarisation et la capacité de gouvernance."
+        }
+    },
+    {
+    "name": "Spiral of Silence Simulator",
+    "slug": "silent-spiral",
+    "image": "assets/silent-spiral.png",
+    "tech": [
+        "Python","NumPy","Seaborn","Matplotlib","Scikit-learn","Streamlit"
+        ],
+    "github": "https://github.com/liyuanmontreal/silent-spiral",
+    "description": {
+        "en": "An interactive social simulation platform based on communication theory, using agent-based modeling and network dynamics visualization to explore how media bias, algorithmic amplification, and social tolerance influence public silence and opinion evolution.",
+        "zh": "一个基于传播学理论的交互式社会模拟平台，利用多智能体建模与网络动力学可视化，探索媒体偏向、算法放大与社会容忍度对公众沉默与舆论演化的影响。",
+        "fr": "Une plateforme de simulation sociale interactive basée sur la théorie de la communication, utilisant la modélisation basée sur les agents et la visualisation de la dynamique des réseaux pour explorer comment le biais des médias, l'amplification algorithmique et la tolérance sociale influencent le silence public et l'évolution des opinions."
+        }
+    },
+    {
+        "name": "TrustNet",
+        "slug": "trustnet",
+        "image": "assets/trustnet.png",
+        "tech": [
+            "Python","NumPy","Matplotlib","Logistic Regression","Federated Learning"
+            ],
+        "github": "https://github.com/liyuanmontreal/trustnet",
+        "description": {
+            "en": "TrustNet: A socially-inspired federated learning framework that builds dynamic trust graphs to identify noisy or adversarial clients and enable more robust collaborative training.",
+            "zh": "一种受社会心理机制启发的联邦学习框架，通过动态信任矩阵识别噪声与恶意节点，实现更稳健的协同训练。",
+            "fr": "TrustNet : un cadre d’apprentissage fédéré inspiré de la psychologie sociale, utilisant une matrice de confiance dynamique pour détecter les clients bruyants ou malveillants et renforcer la collaboration."
+        }
+    },
+    {
+    "name": "Shadow",
+    "slug": "shadow",
+    "image": "assets/shadow.png",
+    "tech": [
+        "Python", "NumPy", "NegMAS","Matplotlib", "Streamlit","RL"
+    ],
+    "github": "https://github.com/liyuanmontreal/Shadow",
+    "description": {
+        "en": "Shadow is a multi-issue automated negotiation agent that learns concession and acceptance strategies to compete with ANAC-style AI opponents using game-theoretic reasoning and opponent modeling.",
+        "zh": "Shadow 是一个多议题自动化谈判智能体，结合博弈论策略与对手建模，通过学习让步与接受机制来对战 ANAC 风格的智能体。",
+        "fr": "Shadow est un agent de négociation automatisé multi-enjeux, intégrant raisonnement stratégique et modélisation de l’adversaire pour apprendre à concéder et accepter face à des agents IA de type ANAC."
+    }
+    },
+     {
+  "name": "Desire Path",
+  "slug": "desirepath",
+  "image": "assets/desirepath.png",
+  "tech": [
+    "Python", "Streamlit","NumPy","Matplotlib" ,"A* pathfinding algorithm","Agent-based Simulation"
+  ],
+  "github": "https://github.com/liyuanmontreal/desirepath",
+  "description": {
+    "en": "An interactive simulator that models how humans create “desire paths” across lawns, revealing emergent optimal routes through collective behavior, with frame-by-frame visualization of path evolution.",
+    "zh": "一个模拟人类在草坪上踏出“欲望路径”的交互式系统，通过自组织行为展示如何从真实行为中涌现最优路径，并支持逐帧可视化演化过程",
+    "fr": "Un système interactif qui simule le « chemin du désir » que les humains créent sur une pelouse, démontrant comment les chemins optimaux émergent du comportement du monde réel grâce à des actions auto-organisées, et prenant en charge la visualisation image par image du processus évolutif."
+  }
+}
+]

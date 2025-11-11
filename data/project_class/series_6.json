@@ -1,0 +1,89 @@
+ [
+
+  {
+    "name": "Stock Price Prediction",
+    "slug": "stock",
+    "image": "assets/stock.jpg",
+    "tech": [
+      "PyTorch","DoRA fine-tuning","FinBERT","Sentiment Analysis","Data Augmentation", "Agent"
+      
+    ],
+    "github": "https://github.com/liyuanmontreal/IFT6289-NLP_with_DL",
+    "description": {
+      "en": "Short-Term Stock Price Prediction Model Integrating Financial News, Social Media, Macroeconomic Indicators, and Historical Market Data.(Team Project)",
+      "zh": "融合金融新闻、社交媒体、宏观经济数据和历史股票数据的短期股票价格预测模型。(小组项目）",
+      "fr": "Modèle de prédiction à court terme des prix des actions intégrant les nouvelles financières, les médias sociaux, les indicateurs macroéconomiques et les données boursières historiques."
+    }
+  },
+    {
+    "name": "NHL Goal Prediction",
+    "slug": "nhl",
+    "image": "assets/nhl.jpg",
+    "tech": [
+      "Python","Streamlit","Docker","RestfulAPI","Logistic regression", "Neural Networks","XGBoost", "Decision Tree","Matplotlib"
+    ],
+    "github": "https://github.com/liyuanmontreal/NHL-Game-Score-Prediction-Project",
+    "description": {
+      "en": "NHL Game Data Analysis, Visualization, and Goal Prediction.",
+      "zh": "NHL冰球比赛数据分析、可视化与得分预测。",
+      "fr": "Analyse, visualisation et prédiction des buts des matchs de hockey de la LNH."
+    }
+  },
+    {
+    "name": "Crime hotspots Forecasting",
+    "slug": "crimehotspots",
+    "image": "assets/hotspots.png",
+    "tech": [
+      "Python","Pandas","Geospatial Analysis","Random Forest","Streamlit"
+    ],
+    "github": "https://github.com/liyuanmontreal/crime_hotspot",  
+    "description": {
+      "en": "An intelligent crime hotspot forecasting and visualization system that uses real city crime data and spatial grids (H3) to predict high-risk areas and support public-safety decision-making.",
+      "zh": "一个基于真实城市犯罪数据的智能热点预测与可视化系统，通过机器学习与地理网格（H3）分析未来高风险区域，辅助公共安全决策",
+      "fr": "Un système intelligent de prédiction et de visualisation des points chauds basé sur des données réelles sur la criminalité urbaine analyse les futures zones à haut risque en utilisant l'apprentissage automatique et une grille géographique (H3) pour aider à la prise de décision en matière de sécurité publique."
+    }
+  },
+   {
+  "name": "Pottery Matching",
+  "slug": "pottery",
+  "image": "assets/pottery_match.png",
+  "tech": [
+    "Python", "PyTorch", "FAISS", "OpenCV", "NetworkX"
+  ],
+  "github": "https://github.com/liyuanmontreal/h690_pottery_matching",
+  "description": {
+    "en": "Self-supervised pottery fragment reconstruction using FAISS retrieval, Siamese networks, geometric consistency, and reference shape priors.",
+    "zh": "基于 FAISS 检索、孪生网络、几何一致性与参考陶器形状的自监督陶片重建项目。",
+    "fr": "Reconstruction auto-supervisée de fragments de poterie utilisant FAISS, réseaux siamois, cohérence géométrique et formes de référence."
+  }
+},
+ {
+    "name": "Bio diversity Dashboard",
+    "slug": "escope",
+    "image": "assets/escope.jpg",
+    "tech": [
+      "Python", "Streamlit", "Matplotlib", "Pandas" ,"seaborn"       
+    ],
+    "github": "https://github.com/liyuanmontreal/ecoscope",
+    "description": {
+      "en": "Biodiversity Data Visualization Dashboard",
+      "zh": "生物多样性数据可视化仪表盘",
+      "fr": "Tableau de bord de visualisation des données sur la biodiversité"
+    }
+  } ,
+  {
+    "name": "IndoorNav",
+    "slug": "indoornav",
+    "image": "assets/indoornav.png",
+    "tech": [
+      "Python","A*","Matplotlib", "Pillow","Streamlit"   
+
+    ],
+    "github": "https://github.com/liyuanmontreal/IndoorNav",  
+    "description": {
+      "en": "An indoor intelligent navigation system with corridor-polyline modeling and realistic path routing for complex buildings such as hospitals and university campuses.",
+      "zh": "一个室内智能导航系统，支持走廊折线建模与真实路径导航，可用于医院、学校等复杂建筑。",
+      "fr": "Un système de navigation intérieure intelligent, basé sur des polylignes de couloirs et un routage réaliste, conçu pour des bâtiments complexes comme les hôpitaux et les campus universitaires."
+    }
+  }
+ ]

@@ -1,0 +1,46 @@
+[
+     {
+    "name": "Multimodal Emotion Recognition and Prediction",
+    "slug": "emotion",
+    "image": "assets/emotion.jpg",
+    "tech": [
+      "PyTorch","WavLM","RoBERTa","CNN","Transformer"
+    ],
+    "github": "https://github.com/liyuanmontreal/IFT-6759-Advanced-ML-Projectroject",
+    "description": {
+      "en": "Multimodal Dialogue Emotion Recognition and Prediction Model Based on Text and Speech Fusion.(Team Project)",
+      "zh": "基于文本与语音融合的多模态对话情感识别和预测模型。(小组项目）",
+      "fr": "Modèle de reconnaissance et de prédiction des émotions dans les dialogues multimodaux basé sur la fusion du texte et de la parole."
+    }
+  },
+  {
+    "name": "SemioticGPT",
+    "slug": "semioticgpt",
+    "image": "assets/semioticGPT.png",
+    "tech": [
+      "Python","CLIP","Pytorch","Llama","Streamlit","Contrastive learnin"
+
+    ],
+    "github": "https://github.com/liyuanmontreal/semioticgpt",  
+    "description": {
+      "en": "SemioticGPT is a vision-augmented semiotic AI that uses CLIP to detect visual symbols and a language model to generate cross-cultural, multi-layer symbolic interpretations.",
+      "zh": "SemioticGPT 是一个融合视觉识别与符号学解释的 AI 系统，通过 CLIP 识别图像符号，并由语言模型输出跨文化、多层次的符号意义解析。",
+      "fr": "SemioticGPT est une IA sémiotique augmentée par la vision qui utilise CLIP pour détecter les symboles visuels et un modèle de langage pour générer des interprétations symboliques interculturelles et à plusieurs niveaux."
+    }
+  },
+   {
+    "name": "song-translator",
+    "slug": "songtranslator",
+    "image": "assets/song_translator.png",
+    "tech": [
+      "Python","Whisper","FFmpeg","LRC timestamp generation","gTTS"   
+
+    ],
+    "github": "https://github.com/liyuanmontreal/song_translator",  
+    "description": {
+      "en": "An AI-powered cross-language singing system that uploads a song and automatically generates a translated AI cover with timing alignment, TTS synthesis, and karaoke subtitles.",
+      "zh": "一个支持上传歌曲并自动生成跨语言 AI 翻唱的系统，结合歌词翻译、时序对齐、语音合成与字幕生成，实现智能音乐再创作。",
+      "fr": "Un système qui permet de télécharger des chansons et de générer automatiquement des pochettes IA multilingues, combinant la traduction des paroles, l'alignement temporel, la synthèse vocale et la génération de sous-titres pour une recréation musicale intelligente."
+    }
+  }
+]

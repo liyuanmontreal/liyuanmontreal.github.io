@@ -1,0 +1,120 @@
+
+
+ [
+    {
+  "name": "LatentVision",
+  "slug": "latentvision",
+  "image": "assets/latentvision.png",
+  "tech": [
+    "Python", "PyTorch","NumPy", "Scikit-Learn", "UMAP-Learn", "Matplotlib","Plotly","Streamlit","PCA/UMAP","Vit","Representation Learning","Dimensionality Reduction", "Model Interpretability"
+  ],
+  "github": "https://github.com/liyuanmontreal/LatentVision",
+  "description": {
+    "en": "LatentVision is a tool for projecting and visualizing visual Transformer latent spaces, supporting PCA/UMAP dimensionality reduction, clustering analysis, 3D/interactive point cloud visualization, and representational geometry analysis.",
+    "zh": "LatentVision — 一个用于投影与可视化视觉 Transformer 嵌入空间的工具，支持 PCA/UMAP 降维、聚类分析、3D/交互式点云可视化与表征几何分析。",
+    "fr": "LatentVision est un outil de projection et de visualisation des espaces latents des transformateurs visuels, prenant en charge la réduction de dimension PCA/UMAP, l’analyse de clustering, la visualisation de nuages de points 3D/interactifs et l’analyse de la géométrie représentationnelle."
+  }
+},
+      {
+    "name": "ParityGEquivCNN",
+    "slug" : "pnn",
+    "image": "assets/ParityGEquivCNN.png",
+    "tech": [
+        "Python", "PyTorch", "NumPy", "Matplotlib"
+    ],
+     "github": "https://github.com/liyuanmontreal/ParityGEquivCNN",
+    "description": {
+      "en": "Parity-G Equivariant Convolutional Networks for Robust Feature Learning and Symmetric Structure Perception.",
+      "zh": "本项目是一个群等变卷积网络。受宇称对称启发，实现具备内在镜像等变性的卷积网络，实现结构对称感知与鲁棒特征学习",
+      "fr": "Réseaux de Convolution Équivariants Parité-G pour l’Apprentissage de Caractéristiques Robustes et la Perception de Structures Symétriques."
+    }
+  },
+   {
+  "name": "HybridQuantumClassicalNN",
+  "slug": "qnn",
+  "image": "assets/HybridQuantumClassicalNN.jpg",
+  "tech": [
+    "Python", "PyTorch", "PennyLane", "NumPy", "Matplotlib"
+  ],
+  "github": "https://github.com/liyuanmontreal/HybridQuantumClassicalNN",
+  "description": {
+    "en": "A hybrid quantum–classical neural network that combines differentiable quantum circuits with deep learning encoders for small-sample image classification and quantum feature exploration.",
+    "zh": "一种混合量子–经典神经网络，将可微量子电路与深度学习编码器结合，用于小样本图像分类与量子特征探索。",
+    "fr": "Un réseau neuronal hybride quantique-classique combinant des circuits quantiques différentiables avec des encodeurs d’apprentissage profond pour la classification d’images à faible échantillon et l’exploration de caractéristiques quantiques."
+  }
+},
+ {
+    "name": "MetaMirror",
+    "slug" : "metamirror",
+    "image": "assets/metamirror.jpg",
+    "tech": [
+        "Python", "PyTorch", "NumPy", "Matplotlib", "Scikit-learn"
+    ],
+     "github": "https://github.com/liyuanmontreal/metamirror",
+
+    "description": {
+      "en": "MetaMirror is a research project exploring whether a machine learning model can learn about itself — by training a meta-model to predict the base model’s next performance, enabling self-referential and introspective learning.",
+      "zh": "MetaMirror 是一个探索机器学习模型能否“理解自身”的研究项目——通过训练一个元模型来预测主模型下一步的表现，从而实现神经网络的自我建模与反思。",
+      "fr": "MetaMirror est un projet de recherche explorant si un modèle d’apprentissage automatique peut apprendre sur lui-même — en entraînant un méta-modèle à prédire la performance future du modèle de base, favorisant un apprentissage auto-référentiel et introspectif."
+    }
+  },
+    {
+  "name": "ProvabilityPredictor",
+  "slug": "provabilitypredictor",
+  "image": "assets/godelian.jpg",
+  "tech": [
+     "PyTorch", "Logic Engine","Synthetic Data","Scikit-Learn", "Matplotlib"
+  ],
+  "github": "https://github.com/liyuanmontreal/ProvabilityPredictor",
+  "description": {
+    "en": "Provability Predictor — A mini ML project that learns patterns of logical provability and exhibits Gödelian 'incompleteness' phenomena within neural networks",
+    "zh": "可证性预测器——一个学习逻辑可证性模式、并在神经网络中呈现哥德尔式“不完备”现象的迷你机器学习项目",
+    "fr": "Provability Predictor — Un mini projet ML qui apprend les modèles de prouvabilité logique et présente des phénomènes 'd'incomplétude' Gödelienne au sein des réseaux neuronaux"
+  }
+},
+
+ {
+    "name": "LLM‑Small",
+    "image": "assets/llm_small.png",
+    "slug"  : "llm-small",
+    "tech": [
+        "Python", "PyTorch", "Transformers", "SentencePiece","Tokenizer retraining"
+    ],
+     "github": "https://github.com/liyuanmontreal/llm_small",
+    "description": {
+      "en": "LLM-Small is a compact, lightweight ChatGPT style language model.",
+      "zh": "LLM-Small 是一个从零开始构建的小型语言模型。",
+      "fr": "LLM-Small est un modèle de langage léger."
+    }
+    
+  },  
+   {
+    "name": "MiniClip",
+    "slug" : "miniclip",
+    "image": "assets/miniclip.png",
+    "tech": [
+        "Python", "Contrastive Learning", "Dual-Encoder Architecture"
+    ],
+     "github": "https://github.com/liyuanmontreal/miniclip",
+    "description": {
+      "en": "MiniCLIP is a lightweight contrastive learning model that aligns images and text in a shared semantic space for symbolic visual understanding.",
+      "zh": "MiniCLIP 是一个轻量级对比学习模型，通过映射图像与文本到同一语义空间，实现符号级视觉语义对齐与理解。",
+      "fr": "MiniCLIP est un modèle d’apprentissage contrastif léger qui aligne les images et le texte dans un espace sémantique partagé pour une compréhension visuelle symbolique."
+    }
+  },
+   {
+  "name": "Code Golf",
+  "slug": "coldgolf",
+  "image": "assets/codegolf.png",
+  "tech": [
+    "Python", "NumPy","Pandas","Matplotlib" ,"DSL"
+  ],
+  "github": "https://github.com/liyuanmontreal/codegolf",
+  "description": {
+    "en": "A lightweight auto-reasoning ARC solver with a mini-DSL for combinable geometric transforms",
+    "zh": "一个基于可组合几何变换 mini-DSL 的轻量级 ARC 自动推理求解器",
+    "fr": "Un solveur ARC auto-raisonnant léger avec un mini-DSL pour les transformations géométriques combinables"
+  }
+}
+ 
+ ]

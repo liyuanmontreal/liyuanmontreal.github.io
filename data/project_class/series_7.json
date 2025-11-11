@@ -1,0 +1,46 @@
+[
+
+   {
+  "name": "Lyra",
+  "slug": "lyra",
+  "image": "assets/lyra.png",
+  "tech": [
+    "Nature Language"
+  ],
+  "github": "https://github.com/liyuanmontreal/Lyra",
+  "description": {
+    "en": "Lyra is a high-density semantic language that use P–A–E three-dimensional semantic structure to represent untranslatable words around the world. ",
+    "zh": "Lyra是一种高密度语义语言，采用P–A–E三维语义结构来表示世界各地的不可翻译词汇。",
+    "fr": "Lyra est une langue sémantique à haute densité qui utilise une structure sémantique tridimensionnelle P–A–E pour représenter les mots intraduisibles à travers le monde."
+  }
+},
+{
+  "name": "MyEyes",
+  "slug": "myeyes",
+  "image": "assets/my_eyes.jpg",
+  "tech": [
+    "Python", "feedparser", "BeautifulSoup", "BART"
+  ],
+  "github": "https://github.com/liyuanmontreal/MyEyes",
+  "description": {
+    "en": "MyEyes is an AI tool that automatically scrapes content from news sources and generates daily long-form summaries.",
+    "zh": "MyEyes 是一个自动从新闻源抓取内容并生成每日长摘要的 AI 工具。",
+    "fr": "MyEyes est un outil d’IA qui extrait automatiquement le contenu des sources d’actualités et génère des résumés longs quotidiens."
+  }
+},
+
+{
+  "name": "AlmostOS",
+  "slug": "almostos",
+  "image": "assets/almostos.png",
+  "tech": [
+    "HTML5", "CSS3", "ES6+", "Stochastic UI logic","Adversarial interaction patterns"
+  ],
+  "github": "https://github.com/liyuanmontreal/almostos",
+  "description": {
+    "en": "The Grand Collection of Unusable UI Controls, delicate, gentle offset,never angry,never submissive",
+    "zh": "不可用控件大合集.有点优雅，温柔偏移，永不生气,永不屈服",
+    "fr": "La Grande Collection de Contrôles d’Interface Utilisateur Inutilisables. Délicat, décalage doux, jamais en colère, jamais soumis"
+  }
+}
+]

@@ -1,0 +1,46 @@
+
+ [
+      {
+  "name": "SpyNet",
+  "slug": "spynet",
+  "image": "assets/spynet.png",
+  "tech": [
+     "Python","PyTorch", "FastAPI","NumPy","Scikit-learn","Differential Privacy","Noise Injection","Quantization"
+    ],
+  "github": "https://github.com/liyuanmontreal/spynet",
+  "description": {
+    "en": "SpyNet is an interactive simulation of model stealing and defense in machine learning, demonstrating how an attacker can replicate a model through API queries and how defenses like noise, quantization, and differential privacy can protect it.",
+    "zh": "SpyNet 是一个展示机器学习模型窃取与防御机制的交互式实验系统，模拟“间谍”如何通过 API 查询重建模型，以及“防御者”如何利用噪声、量化与差分隐私保护模型安全。",
+    "fr": "SpyNet est une simulation interactive d’espionnage et de défense en apprentissage automatique, illustrant comment un attaquant peut reproduire un modèle via des requêtes API et comment des défenses comme le bruit, la quantification et la confidentialité différentielle peuvent le protéger."
+  }
+},
+   {
+    "name": "Mini-IDS",
+    "slug": "ids",
+    "image": "assets/ids.png",
+    "tech": [
+      "Python","Pandas","numpy","scikit-learn","joblib","XGBoost","matplotlib","Streamlit"   
+
+    ],
+    "github": "https://github.com/liyuanmontreal/IDS",  
+    "description": {
+      "en": "Mini-IDS is a lightweight intrusion-detection prototype that extracts flow features from network logs, uses an XGBoost baseline to detect malicious traffic, and provides confusion-matrix visualization and a simple web UI.",
+      "zh": "Mini-IDS 是一个轻量级入侵检测原型，能从网络日志提取流量特征，使用 XGBoost 基线模型检测并可视化恶意流量。",
+      "fr": "Mini-IDS est un prototype léger de détection d'intrusion qui extrait les caractéristiques du trafic des journaux réseau et utilise le modèle de base XGBoost pour détecter et visualiser le trafic malveillant."
+    }
+  },
+  {
+  "name": "Stego",
+  "slug": "stego",
+  "image": "assets/stego.png",
+  "tech": [
+    "Python", "Pillow", "LSB", "PyTorch", "CNN", "Streamlit","Matplotlib"
+  ],
+  "github": "https://github.com/liyuanmontreal/stego",
+  "description": {
+    "en": "StegoScope is a visual steganography and AI detection system that hides secret messages in images, extracts them, and uses deep learning to detect stego content.",
+    "zh": "StegoScope 是一个视觉隐写与AI检测系统，可将秘密信息隐藏在图片中、从隐写图中提取信息，并利用深度学习识别隐写内容。",
+    "fr": "StegoScope est un système de stéganographie visuelle et de détection par IA qui cache des messages secrets dans des images, les extrait et utilise l’apprentissage profond pour détecter le contenu stégo."
+  }
+}
+ ]

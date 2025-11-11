@@ -16,34 +16,28 @@
 
   "sections": {
     "projects": "Projects",
-    "research": "Theory Projects",
-    "applied": "Application Projects",
     "articles": "Articles",
     "read_more": "Read More",
     "back": "Back",
-    "model_project": "Model Reproduction Projects",  
-    "cutting_edge_project": "ML Concept Projects",  
-    "agent_project": "Multi-Agent and Social Simulation Projects",
-    "explore_project": "Exploratory Projects",  
-    "visualization_project": "Data Visualization Projects",  
-    "application_project": "Mainstream Application Projects",  
-    "reality_project": "Real-world Problem Projects",  
-    "creative_product_project": "Creative Products",  
-    "tools_project": "Interesting Tools",
-    "model_project_detail": "Learn and reproduce some famous models and libraries",
-    "cutting_edge_project_detail": "ML concept learning projects",
-    "agent_project_detail": "Multi-agent and social simulation related projects",
-    "explore_project_detail": "Experimental and interdisciplinary exploratory projects",  
-    "visualization_project_detail": "Data analysis and visualization projects",  
-    "application_project_detail": "Learning projects in mainstream application areas",  
-    "reality_project_detail": "Some attempts to solve real-world problems with ML",  
-    "creative_product_project_detail": "Some creative products",  
-    "tools_project_detail": "Miscellaneous small tools"
+    "series_1":"Reinforcement Learning and World Models",
+    "series_1_detail":"Agents Learning, Predicting, and Controlling in Complex Environments",
+    "series_2":"Multi-Agent Intelligence and AI Society",
+    "series_2_detail":"Simulating Cooperation, Competition, and Social Dynamics in Multi-Agent Systems and AI Societies.",
+    "series_3":"Multimodal Perception",
+    "series_3_detail":"How AI perceives the world through language, sound, and vision.",
+    "series_4":"Model Architecture and Design",
+    "series_4_detail":"Model Architecture Design, Innovation, and Interpretability Projects",
+    "series_5":"Security Projects",
+    "series_5_detail":"Security-Related ML Projects, Defending Against Model Theft and Adversarial Attacks.",
+    "series_6":"Applied Intelligence",
+    "series_6_detail":"Applying machine learning to practical problems in finance, sports, fashion, archaeology, public security, etc.",
+    "series_7":"Generative  AI and interactive app",
+    "series_7_detail":"AI systems capable of understanding, generating, and interacting with information in conjunction with humans and interactive app."
   },
 
   "interests": {
     "title": "Research Interests",
-    "text": "Currently interested at reinforcement learning, multi-agent collaboration, social simulation, complex decision-making problem and ecological problem. For other areas of interest, please refer to the projects.\n"
+    "text": "Research areas include reinforcement learning, world models, and AI societies, focusing on how intelligent agents perceive, reason, and act through interaction and reflection, as well as using machine learning to solve real-world problems.\n"
   },
   "projects": {
     "title": "Projects",
