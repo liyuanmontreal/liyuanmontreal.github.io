@@ -1,5 +1,21 @@
 
  [
+    {
+  "name": "Machine-Generated Text Detection",
+  "slug": "machine-text-detection",
+  "image": "assets/machine-text-detection.png",
+  "tech": [
+     "Python", "scikit-learn","NumPy","Matplotlib","GPT-2 perplexity scoring"
+    ],
+  "github": "https://github.com/liyuanmontreal/machine-text-detection",
+  "description": {
+    "en": "This project uses two methods, perplexity model and style feature model, to detect machine-generated text.",
+    "zh": "本项目使用困惑度模型与风格特征模型两种方法对机器生成文本进行检测。",
+    "fr": "Ce projet utilise deux méthodes, le modèle de perplexité et le modèle de caractéristiques de style, pour détecter le texte généré par machine."
+  }
+},
+
+  
       {
   "name": "SpyNet",
   "slug": "spynet",
