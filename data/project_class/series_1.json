@@ -40,6 +40,20 @@
     "zh": "本项目使用PyTorch重新实现了 World Models 框架，使智能体能在“梦境世界”中学习驾驶与规划。",
     "fr": "Ce projet réimplémente le framework World Models en utilisant PyTorch, permettant aux agents intelligents d'apprendre à conduire et à planifier dans un « monde de rêve »."
   }
-}
+},
 
+   {
+  "name": "DetectiveRL",
+  "slug": "detective-rl",
+  "image": "assets/detective-rl.png",
+  "tech": [
+    "Python", "NumPy", "PyTorch", "Matplotlib","FFmpeg","Pillow"
+  ],
+  "github": "https://github.com/liyuanmontreal/DetectiveRL",
+  "description": {
+    "en": "A hierarchical reinforcement learning system based on reasoning allows an intelligent agent to act like a detective, gathering clues and updating beliefs to uncover the truth even with incomplete information.",
+    "zh": "一个基于推理的层级强化学习系统，让智能体像侦探一样在不完全信息下通过收集线索与更新信念来锁定真相。",
+    "fr": "Un système d'apprentissage par renforcement hiérarchique basé sur le raisonnement permet à un agent intelligent d'agir comme un détective, en rassemblant des indices et en mettant à jour ses croyances pour découvrir la vérité même avec des informations incomplètes."
+  }
+}，
 ]
