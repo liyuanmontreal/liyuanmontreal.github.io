@@ -55,5 +55,5 @@
     "zh": "一个基于推理的层级强化学习系统，让智能体像侦探一样在不完全信息下通过收集线索与更新信念来锁定真相。",
     "fr": "Un système d'apprentissage par renforcement hiérarchique basé sur le raisonnement permet à un agent intelligent d'agir comme un détective, en rassemblant des indices et en mettant à jour ses croyances pour découvrir la vérité même avec des informations incomplètes."
   }
-}，
+}
 ]
