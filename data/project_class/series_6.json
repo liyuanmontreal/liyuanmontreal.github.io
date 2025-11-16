@@ -29,6 +29,21 @@
       "fr": "Analyse, visualisation et prédiction des buts des matchs de hockey de la LNH."
     }
   },
+  
+    {
+    "name": "Sarcasm Detection",
+    "slug": "sarcasm-detection",
+    "image": "assets/sarcasm-detection.png",
+    "tech": [
+      "Python","Pandas","PyTorch","Scikit-learn","RoBERTa"    
+    ],
+    "github": "https://github.com/liyuanmontreal/sarcasm-detection",  
+    "description": {
+      "en": "A RoBERTa-based intended sarcasm detection model for binary sarcasm classification on English and Arabic tweets",
+      "zh": "基于 RoBERTa 的意图性讽刺检测模型，实现英文与阿拉伯语推文的讽刺二分类任务。",
+      "fr": "Un modèle basé sur RoBERTa pour détecter le sarcasme intentionnel dans les tweets anglais et arabes"
+    }
+  },
     {
     "name": "Crime hotspots Forecasting",
     "slug": "crimehotspots",
