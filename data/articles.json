@@ -1,4 +1,27 @@
 [
+
+    {            
+    "title": {
+      "en": "Some Challenges in Building English–Inuktitut MT Systems",
+      "zh": "构建英语-因纽特语翻译器的一些挑战",
+      "fr": "Quelques défis liés à la construction de systèmes de traduction automatique anglais-inuktitut"
+    },
+    "slug": "inuit",
+    "category": "essays",   
+    "date": "2025-11-17",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "https://medium.com/@liyuan.montreal/inuit",
+    "tags": [   
+      "Language","Machine Translate System"
+      ],                  
+    "cover": "assets/articles/Inuktitut.jpg"  
+  },
+
+
   {            
     "title": {
       "en": "Modeling 'Spiral of Silence'",
