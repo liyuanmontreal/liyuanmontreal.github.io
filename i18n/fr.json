@@ -36,8 +36,9 @@
   
   "interests": {
     "title": "Domaines de recherche",
-    "text": "Actuellement intéressé par l'apprentissage par renforcement, les modèles du monde et les sociétés d'IA, la manière dont les agents intelligents perçoivent, raisonnent et agissent par l'interaction et la réflexion, l'utilisation de l'apprentissage automatique pour résoudre des problèmes du monde réel.\n"
-  },
+    "text": "Intérêts actuels : apprentissage par renforcement, modèles du monde, systèmes multi-agents et cadres conceptuels génératifs pour la compréhension des structures de l’intelligence."
+
+},
   "projects": {
     "title": "Projets",
     "view_code": "GitHub"
@@ -45,7 +46,7 @@
  
   "about": {
     "title": "À propos",
-    "text": "Étudiante à la maîtrise en apprentissage automatique à l'Université de Montréal / Mila. J'aime catégoriser les choses et trouver des connexions entre elles."
+    "text": "Étudiante à la maîtrise en apprentissage automatique à l'Université de Montréal / Mila. "
   },
   "contact": {
     "title": "Contact",

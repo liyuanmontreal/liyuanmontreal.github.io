@@ -37,7 +37,7 @@
 
   "interests": {
     "title": "Research Interests",
-    "text": "Currently interested at reinforcement learning, world models, and AI societies,  how intelligent agents perceive, reason, and act through interaction and reflection, using machine learning to solve real-world problems.\n"
+    "text": "Currently interests: Reinforcement learning, world models, multi-agent systems, and generative conceptual frameworks for understanding structure in intelligence.\n"
   },
   "projects": {
     "title": "Projects",
@@ -46,7 +46,7 @@
  
   "about": {
     "title": "About",
-    "text": "Master's student in Machine Learning at University of Montreal / Mila. Enjoy categorizing things and finding connections between them."
+    "text": "Master's student in Machine Learning at University of Montreal / Mila."
   },
   "contact": {
     "title": "Contact",
