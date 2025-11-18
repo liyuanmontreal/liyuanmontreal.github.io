@@ -44,6 +44,21 @@
       "fr": "Un modèle basé sur RoBERTa pour détecter le sarcasme intentionnel dans les tweets anglais et arabes"
     }
   },
+   
+    {
+    "name": "Math Ocr",
+    "slug": "math-ocr",
+    "image": "assets/math-ocr.jpg",
+    "tech": [
+      "Python","Pandas","PyTorch","CNN","Transformer"    
+    ],
+    "github": "https://github.com/liyuanmontreal/math-ocr",  
+    "description": {
+      "en": "Recognize handwritten mathematical formula images as corresponding LaTeX expressions",
+      "zh": "手写数学公式图像识别为对应的 LaTeX 表达式",
+      "fr": "Reconnaître les images de formules mathématiques manuscrites comme des expressions LaTeX correspondantes"
+    }
+  },
     {
     "name": "Crime hotspots Forecasting",
     "slug": "crimehotspots",
