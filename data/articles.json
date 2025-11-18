@@ -1,4 +1,24 @@
 [
+      {            
+    "title": {
+      "en": "Narrative Stucture and Non-linear System",
+      "zh": "叙事结构与非线性系统",
+      "fr": "Structure narrative et systèmes non linéaires"
+    },
+    "slug": "narrative-structure",
+    "category": "essays",   
+    "date": "2025-11-18",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "https://medium.com/@liyuan.montreal/narrative-structure",
+    "tags": [   
+      "Non-linear System","Narrative Structure","Chebyshev","Node Distribution"
+      ],                  
+    "cover": "assets/articles/narrative-structure.png"  
+  },
 
     {            
     "title": {
