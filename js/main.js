@@ -29,6 +29,7 @@
       
       const articles = ref([])
       
+      const series_0_project = ref([])
       const series_1_project = ref([])
       const series_2_project = ref([])
       const series_3_project = ref([])
@@ -52,6 +53,7 @@
       onMounted(async () => {
         articles.value = await (await fetch('data/articles.json')).json()
 
+        series_0_project.value = await (await fetch('data/project_class/series_0.json')).json() // 形态空间
         series_1_project.value = await (await fetch('data/project_class/series_1.json')).json() // RL&world  
         series_2_project.value = await (await fetch('data/project_class/series_2.json')).json() //  agent society         
         series_3_project.value = await (await fetch('data/project_class/series_3.json')).json() //  multimodal        
@@ -97,7 +99,7 @@
       }
 
       return { t, locale, switchLang, theme, toggleTheme, articles, links,         
-        series_1_project,series_2_project,series_3_project,series_4_project,series_5_project,series_6_project,series_7_project,formatInterests  }
+        series_0_project, series_1_project,series_2_project,series_3_project,series_4_project,series_5_project,series_6_project,series_7_project,formatInterests  }
 
     },
     template: `
@@ -147,6 +149,9 @@
           <h3 class="text-xl md:text-2xl font-semibold text-sky-700 dark:text-sky-300 mb-6">{{ t('sections.projects') }}</h3>
 
 
+       
+          
+          
           <!-- 子小节 series 1 -->
           <h5 class="text-l md:text-xl font-semibold text-sky-500 dark:text-sky-300 mb-6">{{ t('sections.series_1') }}</h5>   
           <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.series_1_detail') }}</div>
@@ -337,6 +342,36 @@
           <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.series_7_detail') }}</div>
            <div class="grid gap-6 md:grid-cols-3">
             <div v-for="p in series_7_project" :key="p.name"
+              class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
+              <img :src="p.image" class="w-full h-44 object-cover" alt="">
+              <div class="p-4">
+                <div class="text-base md:text-lg font-semibold text-sky-700 dark:text-sky-300">{{ p.name }}</div>
+                <p class="mt-1 text-sm text-slate-700 dark:text-slate-300">{{ p.description[locale] }}</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span v-for="tag in p.tech" :key="tag"
+                    class="text-xs px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-700/70 dark:border-slate-600 dark:text-slate-200">{{ tag }}</span>
+                </div>
+                <div class="mt-4 flex gap-2">
+                  <a v-if="p.github" :href="p.github" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                    {{ t('projects.view_code') }}
+                  </a>
+                  <!-- 新增：Details（跳转到项目详情页） -->
+                  <!--<a :href="'project.html?slug=' + (p.slug || encodeURIComponent(p.name))"
+                      class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition">
+                      {{ t('sections.read_more') }}
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+             <!-- 子小节 series 0 -->
+          <h5 class="text-l md:text-xl font-semibold text-sky-500 dark:text-sky-300 mb-6">{{ t('sections.series_0') }}</h5>   
+          <div id="projects-research" class="mt-2 mb-3 text-sky-400/90 font-medium">{{ t('sections.series_0_detail') }}</div>
+           <div class="grid gap-6 md:grid-cols-3">
+            <div v-for="p in series_0_project" :key="p.name"
               class="bg-white border border-slate-200 dark:bg-slate-800/80 dark:border-slate-700 backdrop-blur rounded-2xl overflow-hidden hover:border-sky-400/50 dark:hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10 dark:hover:shadow-sky-500/20 transition">
               <img :src="p.image" class="w-full h-44 object-cover" alt="">
               <div class="p-4">

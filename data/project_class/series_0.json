@@ -1,0 +1,33 @@
+
+
+
+[
+{
+  "name": "2D Puzzle Block Morphological Space",
+  "slug": "2D-puzzle-block",
+  "image": "assets/2D-puzzle-block.png",
+  "tech": [
+    "Python", "NumPy", "Matplotlib", "scikit-learn","Morphological feature extraction","Interactive visualization"
+  ],
+  "github": "https://github.com/liyuanmontreal/2D-puzzle-block-morphological-space",
+  "description": {
+    "en": "A morphological space visualization system for high-dimensional feature extraction and representation of the geometric structure (black and white density, symmetry, connectivity, etc.) of 2D puzzle toys.",
+    "zh": "一个对2D拼板玩具的几何结构（黑白密度、对称性、连通性等）进行高维特征提取和表示的形态空间可视化系统。",
+    "fr": "Un système de visualisation morphologique de l'espace pour l'extraction de caractéristiques de haute dimension et la représentation de la structure géométrique (densité de noir et blanc, symétrie, connectivité, etc.) des jouets puzzle 2D."
+  }
+},
+{
+  "name": "Animal Pattern Lab ",
+  "slug": "animal-pattern-lab",
+  "image": "assets/animal-pattern.png",
+  "tech": [
+    "Python","NumPy","Matplotlib","Streamlit","Generative morphogenesis models (RD, CA, Voronoi, DLA, structural patterns)"
+  ],
+  "github": "https://github.com/liyuanmontreal/animal-pattern-lab",
+  "description": {
+    "en": "Animal Pattern Lab is an interactive generative system that models the core biological mechanisms behind animal skin and coat patterns using mathematical and computational morphogenesis.",
+    "zh": "Animal Pattern Lab 是一个基于数学与计算形态发生模型的交互式动物花纹生成系统，用于模拟动物花纹的核心生成机制。",
+    "fr": "Animal Pattern Lab est un système génératif interactif qui modélise les mécanismes biologiques fondamentaux à l'origine des motifs de la peau et du pelage des animaux à l'aide de la morphogenèse mathématique et informatique."
+  }
+}
+]

@@ -18,6 +18,8 @@
     "articles": "Articles",
     "read_more": "Lire la suite",
     "back": "Retour",    
+    "series_0":"Morphoespace",
+    "series_0_detail":"Un ensemble de projets interdisciplinaires explorant les espaces structurels et combinatoires à l'aide d'embeddings d'apprentissage automatique et de représentations de grande dimension.",
     "series_1":"Apprentissage par renforcement et modèles du monde",
     "series_1_detail":"Agents apprenant, prédisant et contrôlant dans des environnements complexes",
     "series_2":"Intelligence multi-agents et société d'IA",
@@ -36,7 +38,7 @@
   
   "interests": {
     "title": "Domaines de recherche",
-    "text": "Intérêts actuels : Espace morphologique général,apprentissage par renforcement, modèles du monde, systèmes multi-agents."
+    "text": "Intérêts actuels : apprentissage par renforcement, modèles du monde, systèmes multi-agents, espace morphologique."
 
 },
   "projects": {

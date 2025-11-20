@@ -19,6 +19,8 @@
     "articles": "Articles",
     "read_more": "Read More",
     "back": "Back",
+    "series_0":"Morphospace",
+    "series_0_detail":"A collection of interdisciplinary projects exploring structural and combinatorial spaces using ML embeddings and high-dimensional representations.",
     "series_1":"Reinforcement Learning and World Models",
     "series_1_detail":"Agents Learning, Predicting, and Controlling in Complex Environments",
     "series_2":"Multi-Agent Intelligence and AI Society",
@@ -31,13 +33,13 @@
     "series_5_detail":"Security & Robustness -Related ML Projects, Defending Against Model Theft and Adversarial Attacks.",
     "series_6":"Applied Intelligence",
     "series_6_detail":"Applying machine learning to practical problems in finance, sports, fashion, archaeology, public security, etc.",
-    "series_7":"Generative  AI and interactive app",
-    "series_7_detail":"AI systems capable of understanding, generating, and interacting with information in conjunction with humans and interactive app."
+    "series_7":"Generative  AI and other interactive app",
+    "series_7_detail":"AI systems capable of understanding, generating, and interacting with information in conjunction with humans and other interactive app."
   },
 
   "interests": {
     "title": "Research Interests",
-    "text": "Currently interests: General morphological space，Reinforcement learning, world models, multi-agent systems.\n"
+    "text": "Currently interests: Reinforcement learning, world models, multi-agent systems, morphological space.\n"
   },
   "projects": {
     "title": "Projects",
