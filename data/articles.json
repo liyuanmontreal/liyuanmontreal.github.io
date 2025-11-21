@@ -181,6 +181,69 @@
       ],                  
     "cover": "assets/articles/RL.png"  
   },
+
+ 
+   {            
+    "title": {
+      "en": "Paper Summary:Response of California condor populations to reintroductions, reinforcements and lead reduction ",
+      "zh": "论文阅读：Response of California condor populations to reintroductions, reinforcements and lead reduction",
+      "fr": "Paper Summary:Response of California condor populations to reintroductions, reinforcements and lead reduction"
+    },
+    "slug": "condor-paper-1",
+    "category": "papers",   
+    "date": "2025-11-20",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "",
+    "tags": [   
+      "RL"
+      ],                  
+    "cover": "assets/condor.png"  
+  },
+  {            
+    "title": {
+      "en": "Paper Summary: Practical models to guide the transition of California condors from a conservation‑reliant to a self‑sustaining species",
+      "zh": "论文阅读：Practical models to guide the transition of California condors from a conservation‑reliant to a self‑sustaining species",
+      "fr": "Paper Summary:Practical models to guide the transition of California condors from a conservation‑reliant to a self‑sustaining species"
+    },
+    "slug": "condor-paper-2",
+    "category": "papers",   
+    "date": "2025-11-20",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "",
+    "tags": [   
+      "RL"
+      ],                  
+    "cover": "assets/condor.png"  
+  },
+   
+    {            
+    "title": {
+      "en": "Paper Summary: Individual-based population model for California condor",
+      "zh": "论文阅读：Individual-based population model for California condor",
+      "fr": "Paper Summary:Individual-based population model for California condor"
+    },
+    "slug": "condor-paper-1",
+    "category": "papers",   
+    "date": "2025-11-20",  
+    "excerpt": {
+      "en": "",
+      "zh": "",
+      "fr": ""
+    },
+   "link": "",
+    "tags": [   
+      "RL"
+      ],                  
+    "cover": "assets/condor.png"  
+  },
     {            
     "title": {
       "en": "Paper Summary: On the Difficulty of Training Recurrent Neural Networks",
