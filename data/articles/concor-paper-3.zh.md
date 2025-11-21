@@ -11,7 +11,7 @@ Paper：Response of California condor populations to reintroductions, reinforcem
 ## 3. 方法和实验
 
 ### 3.1 方法
-在 HexSim 平台基础上（D’Elia et al. 2022）建立女性个体模型，分为五个阶段类（雏鸟、幼雏、成熟雏、亚成、成鸟）。 
+在 HexSim 平台基础上（D’Elia et al. 2022）建立雌性个体模型，分为五个阶段类（雏鸟、幼雏、成熟雏、亚成、成鸟）。 
 US Forest Service
 模型区域涵盖加州秃鹰当前分布及其向西北延伸至俄勒冈、西华盛顿的潜在扩散。
 模拟 25 年，设计 25 种情景：5 种释放强化水平 × 5 种铅减少水平。 
