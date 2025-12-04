@@ -20,7 +20,7 @@
   "tech": [
     "Python", "NumPy", "MPC", "off-line RL"
   ],
-  "github": "https://github.com/liyuanmontreal/condor",
+  "github": "https://github.com/liyuanmontreal/california-condor-rl-project",
   "description": {
     "en": "This project applies Model Predictive Control (MPC) and Offline Reinforcement Learning (RL) to optimize California condor recovery strategies",
     "zh": "使用模型预测控制（MPC）与离线强化学习（Offline RL）优化加州秃鹰的生态恢复策略",
